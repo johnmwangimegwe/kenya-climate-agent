@@ -1,0 +1,37 @@
+# =============================================================================
+# requirements.txt — Kenya Climate Risk Agent
+# -----------------------------------------------------------------------------
+# Python 3.11+. Versions are lower-bounded to what was tested; pin exactly
+# (==) before a live demo if you want maximum reproducibility.
+#
+# Install:
+#   pip install -r requirements.txt
+# On Debian/Ubuntu/Colab you may need:  pip install -r requirements.txt --break-system-packages
+# =============================================================================
+
+# --- Core AI / agent ---------------------------------------------------------
+google-genai>=2.8.0           # Gemini 3.5 Flash + embeddings (planner, fusion, RAG)
+
+# --- Earth Engine + geospatial ----------------------------------------------
+earthengine-api>=1.0.0        # Google Earth Engine Python API
+geemap>=0.32.0                # EE-integrated interactive maps
+geopandas>=1.0.0              # county boundaries, spatial joins
+shapely>=2.0.0                # geometry operations
+folium>=0.16.0                # interactive map rendering (no-auth fallback)
+
+# --- RAG / vector search -----------------------------------------------------
+faiss-cpu>=1.8.0              # vector index for retrieval
+scikit-learn>=1.4.0           # TF-IDF fallback embeddings
+numpy>=1.26.0                 # arrays / similarity math
+pandas>=2.2.0                 # tabular handling, risk dataframe
+
+# --- Document loading (RAG knowledge base) ----------------------------------
+pypdf>=4.0.0                  # extract text from PDF sources
+
+# --- App / UI ----------------------------------------------------------------
+streamlit>=1.36.0             # web UI
+matplotlib>=3.8.0             # risk bar charts
+
+# --- Config / utilities ------------------------------------------------------
+PyYAML>=6.0                   # config.yaml parsing
+python-dotenv>=1.0.0          # load secrets from .env

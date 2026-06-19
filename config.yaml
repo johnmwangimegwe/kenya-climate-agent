@@ -1,0 +1,61 @@
+# =============================================================================
+# config.yaml — Kenya Climate Risk Agent
+# -----------------------------------------------------------------------------
+# Central configuration for the agent. Every key here is read by the code:
+#   - model               -> planner.py, fusion.py (Gemini model name)
+#   - earth_engine.*       -> tools/earth_engine.py (project + dataset ids)
+#   - population.*         -> tools/population.py (WorldPop id + year)
+#   - risk.weights         -> tools/risk_score.py (transparent scoring weights)
+#   - rag.*                -> rag/build_index.py, rag/retriever.py (index + embeds)
+#   - ui.*                 -> app/streamlit_app.py (map/chart sizes)
+#
+# Secrets (API keys, project ids) do NOT go here — use the .env file. Values in
+# .env (GOOGLE_API_KEY, EE_PROJECT_ID) override / fill the gaps below.
+# =============================================================================
+
+# Gemini model used by the planner and the fusion layer.
+# This is the I/O 2026 model. Confirm the exact string against current docs.
+model: gemini-3.5-flash
+
+earth_engine:
+  # Earth Engine Cloud project id. Prefer setting EE_PROJECT_ID in .env instead.
+  project: null
+  # Dataset ids used by the geophysical tool. Override only if you know what
+  # you're doing — these are the standard public collections.
+  datasets:
+    sentinel1: "COPERNICUS/S1_GRD"     # flood / surface water (SAR VV)
+    srtm: "USGS/SRTMGL1_003"           # elevation -> elevation vulnerability
+    chirps: "UCSB-CHG/CHIRPS/DAILY"    # rainfall
+  # Default analysis window (long-rains season). Overridable per-question.
+  start_date: "2026-03-01"
+  end_date: "2026-05-31"
+
+population:
+  # WorldPop gridded population collection and the year to use.
+  worldpop: "WorldPop/GP/100m/pop"
+  year: 2020
+
+risk:
+  # Transparent, documented scoring weights. They are normalized to sum to 1 at
+  # runtime, so the risk score always stays in [0, 1]. Editing these changes the
+  # ranking in a fully explainable way — no machine learning involved.
+  weights:
+    flood: 0.4
+    rainfall: 0.3
+    population: 0.2
+    elevation: 0.1
+
+rag:
+  # Where the built vector index is persisted (relative to project root).
+  index_dir: "rag_index"
+  # Gemini embedding model used when a GOOGLE_API_KEY is available. When offline
+  # or without a key, the pipeline falls back to local TF-IDF automatically.
+  embedding_model: "gemini-embedding-001"
+  # Chunking parameters for building the index.
+  chunk_size: 600
+  overlap: 100
+
+ui:
+  # How many counties to draw on the map and chart in the Streamlit app.
+  map_top_n: 15
+  chart_top_n: 10

@@ -1,0 +1,1718 @@
+[
+  {
+    "id": 0,
+    "text": "# Knowledge Base Sources This file is the citation register for every document in `knowledge/`. It does two jobs: it tells anyone reading the repo where the agent's grounding comes from, and it provides the legal/licensing record so the project only redistributes documents it is allowed to. ## How to cite each document (format) For every file you drop into `knowledge/pdfs/` or `knowledge/notes/`, add one entry below using this template:",
+    "source": "sources.md",
+    "chunk": 0
+  },
+  {
+    "id": 1,
+    "text": "file you drop into `knowledge/pdfs/` or `knowledge/notes/`, add one entry below using this template: ``` ### <short id> — <filename in knowledge/> - Title: <full document title> - Author / Publisher: <author(s) or issuing organization> - Year: <publication year> - Type: <government report | journal article | NGO assessment | dataset notes> - URL: <direct link to the source> - License: <e.g. CC-BY 4.0 | Open Government data | © publisher — link only> - Redistributable in this repo?: <yes / no — if no, cite + link only> - Used for: <what the agent draws from it, e.g. \"county drought phases\"> ```",
+    "source": "sources.md",
+    "chunk": 1
+  },
+  {
+    "id": 2,
+    "text": "f no, cite + link only> - Used for: <what the agent draws from it, e.g. \"county drought phases\"> ``` **Rule of thumb on the last two fields:** government reports (NDMA, Kenya Met), UN/OCHA, ACAPS, and CC-BY journal articles are generally safe to commit. For anything paywalled or \"all rights reserved\" (e.g. Wiley, ScienceDirect abstracts), set *Redistributable* to **no**, keep only this citation + URL, and do **not** put the PDF in the repo. --- ## Recommended documents to download and add These are real, currently-available Kenyan climate-risk sources.",
+    "source": "sources.md",
+    "chunk": 2
+  },
+  {
+    "id": 3,
+    "text": "ended documents to download and add These are real, currently-available Kenyan climate-risk sources. Download the open ones into `knowledge/pdfs/`; for the closed ones, keep the citation only. ### ndma-bulletin : ndma_drought_bulletin.pdf - Title: National Drought Early Warning Bulletin (monthly; e.g.",
+    "source": "sources.md",
+    "chunk": 3
+  },
+  {
+    "id": 4,
+    "text": "bulletin : ndma_drought_bulletin.pdf - Title: National Drought Early Warning Bulletin (monthly; e.g. February 2026) - Author / Publisher: National Drought Management Authority (NDMA), Kenya - Year: 2026 - Type: government report - URL: https://www.ndma.go.ke/drought-information/ (monthly bulletins) - License: Kenya Government / open public information - Redistributable in this repo?: yes (government public information) - Used for: per-county drought phase (Normal/Alert/Alarm/Emergency), rainfall and vegetation conditions, food-insecurity figures",
+    "source": "sources.md",
+    "chunk": 4
+  },
+  {
+    "id": 5,
+    "text": "ht phase (Normal/Alert/Alarm/Emergency), rainfall and vegetation conditions, food-insecurity figures ### ndma-monthly-update : ndma_national_update_jan2026.pdf - Title: National Monthly Drought Update, January 2026 - Author / Publisher: National Drought Management Authority (NDMA), Kenya - Year: 2026 - Type: government report - URL: https://www.ndma.go.ke/drought-situation-update-2/ - License: Kenya Government / open public information - Redistributable in this repo?: yes - Used for: which ASAL counties are worsening; affected-population counts",
+    "source": "sources.md",
+    "chunk": 5
+  },
+  {
+    "id": 6,
+    "text": "butable in this repo?: yes - Used for: which ASAL counties are worsening; affected-population counts ### acaps-floods : acaps_kenya_floods_briefing.pdf - Title: Kenya — Heavy Rainfall and Floods (Briefing Note) - Author / Publisher: ACAPS - Year: 2024 - Type: NGO assessment - URL: https://www.acaps.org/fileadmin/Data_Product/Main_media/20240514_ACAPS_Briefing_note_Kenya_Floods.pdf - License: ACAPS — free to use with attribution (check current terms) - Redistributable in this repo?: yes (attribution) - Used for: Tana River flood warnings; Garissa/Lamu/Tana River exposure; cholera and waterborne-disease links to flooding",
+    "source": "sources.md",
+    "chunk": 6
+  },
+  {
+    "id": 7,
+    "text": "r flood warnings; Garissa/Lamu/Tana River exposure; cholera and waterborne-disease links to flooding ### odoyo-tana-flood : flood_vulnerability_study.pdf - Title: Assessment of Flood Vulnerability and Coping Strategies of Communities Living along River Tana in Madogo Ward, Kenya - Author / Publisher: Odoyo, E.; Huho, J. M.; Mohamed, A. M.; Mbugua, J. M.",
+    "source": "sources.md",
+    "chunk": 7
+  },
+  {
+    "id": 8,
+    "text": "na in Madogo Ward, Kenya - Author / Publisher: Odoyo, E.; Huho, J. M.; Mohamed, A. M.; Mbugua, J. M. — American Journal of Climatic Studies, 4(1), 1–17 - Year: 2024 - Type: journal article - URL: https://doi.org/10.47672/ajcs.1931 - License: CC-BY 4.0 (open access — redistribution permitted with attribution) - Redistributable in this repo?: yes (CC-BY 4.0) - Used for: flood recurrence (~every 2 years in Madogo), topography as the main vulnerability factor, community coping strategies",
+    "source": "sources.md",
+    "chunk": 8
+  },
+  {
+    "id": 9,
+    "text": "(~every 2 years in Madogo), topography as the main vulnerability factor, community coping strategies ### mugatha-tana-inundation : tana_delta_inundation_mapping.pdf - Title: Flood Inundation Mapping for the Tana River Delta in Kenya - Author / Publisher: Mugatha, A. N. et al.",
+    "source": "sources.md",
+    "chunk": 9
+  },
+  {
+    "id": 10,
+    "text": "ood Inundation Mapping for the Tana River Delta in Kenya - Author / Publisher: Mugatha, A. N. et al. — Tanzania Journal of Engineering and Technology, 44(1) - Year: 2025 - Type: journal article - URL: https://doi.org/10.52339/tjet.v44i1.981 (PDF: https://www.ajol.info/index.php/tjet/article/download/292972/275730) - License: AJOL / open access (verify the article's stated license) - Redistributable in this repo?: yes if open access — otherwise cite + link - Used for: DEM-based inundation extent, gauging stations (Garissa, Hola, Garsen), flood quantiles in the Tana delta",
+    "source": "sources.md",
+    "chunk": 10
+  },
+  {
+    "id": 11,
+    "text": "based inundation extent, gauging stations (Garissa, Hola, Garsen), flood quantiles in the Tana delta ### okoko-flood-governance - Title: Diversified flood governance and related socio-spatial vulnerability in Tana River County, Kenya - Author / Publisher: Okoko — Disasters (Wiley) - Year: 2024 - Type: journal article - URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/disa.12648 - License: © Wiley — all rights reserved - Redistributable in this repo?: NO — citation and link only - Used for: socio-spatial vulnerability differentiated by age, gender, disability (supports the fairness framing — paraphrase, don't copy)",
+    "source": "sources.md",
+    "chunk": 11
+  },
+  {
+    "id": 12,
+    "text": "y differentiated by age, gender, disability (supports the fairness framing — paraphrase, don't copy) --- ## Notes - Always prefer the **county-level** government bulletins for the live numbers — they are the most authoritative and the safest to redistribute. - When you add a PDF, re-run `build_index.py` so the new document is embedded into the retrieval index. - Keep this file in sync with the actual contents of `knowledge/` — every file present should have an entry here, and every \"cite only\" entry should NOT have a file in the repo.",
+    "source": "sources.md",
+    "chunk": 12
+  },
+  {
+    "id": 13,
+    "text": "# Kenya County Climate-Risk Notes Short, curated context the agent can retrieve alongside the satellite signals. Every statement here is paraphrased from the public sources listed in `sources.md` (NDMA bulletins, ACAPS, and open-access flood studies). Keep this file factual and attributed; it is part of the grounded-retrieval corpus. ## Drought phases (ASAL counties) Kenya's National Drought Management Authority classifies arid and semi-arid counties into phases: Normal, Alert, Alarm, Emergency, and Recovery, based on environmental, production, access, and utilization indicators.",
+    "source": "county_notes.md",
+    "chunk": 0
+  },
+  {
+    "id": 14,
+    "text": "rm, Emergency, and Recovery, based on environmental, production, access, and utilization indicators. In early 2026, counties including Mandera, Wajir, Kilifi, and Kwale were classified in the Alarm phase, while Turkana, Marsabit, Samburu, Isiolo, Baringo, Laikipia, Tharaka Nithi, Kajiado, Taita Taveta, Kitui, Tana River, Garissa, and Lamu were in the Alert phase. (Source: NDMA National Drought Early Warning Bulletin, 2026.) ## Tana River flooding The Tana River regularly bursts its banks during the long rains (March–May), with flood risk heightened when the upstream Seven Forks dams are full.",
+    "source": "county_notes.md",
+    "chunk": 1
+  },
+  {
+    "id": 15,
+    "text": "the long rains (March–May), with flood risk heightened when the upstream Seven Forks dams are full. Settlements in Garissa, Lamu, and Tana River counties are repeatedly exposed. Flooding in the lower basin damages crops, livestock, and infrastructure, and is associated with outbreaks of waterborne disease such as cholera. (Sources: ACAPS Kenya Floods briefing, 2024; NDMA.)",
+    "source": "county_notes.md",
+    "chunk": 2
+  },
+  {
+    "id": 16,
+    "text": "outbreaks of waterborne disease such as cholera. (Sources: ACAPS Kenya Floods briefing, 2024; NDMA.) In Madogo Ward (Tana River County), studies record flooding roughly every two years, with topography (low-lying land near the river) as the dominant vulnerability factor; communities cope mainly by relocating to higher ground. (Source: Odoyo et al., 2024, CC-BY 4.0.) ## Population exposure and equity A large share of the population in the lower Tana basin lives in flood-prone households because livelihoods depend on the river for farming and water.",
+    "source": "county_notes.md",
+    "chunk": 3
+  },
+  {
+    "id": 17,
+    "text": "basin lives in flood-prone households because livelihoods depend on the river for farming and water. Vulnerability is unevenly distributed — differentiated by age, gender, and disability — which is why ranking counties by physical hazard alone is insufficient and a transparent, exposure-aware risk score is used here. (Sources: Tana River flood-governance and vulnerability literature; see `sources.md`.) ## Coastal and western flooding Coastal counties (Mombasa, Kilifi, Kwale) experience flash flooding from intense short rains.",
+    "source": "county_notes.md",
+    "chunk": 4
+  },
+  {
+    "id": 18,
+    "text": "ooding Coastal counties (Mombasa, Kilifi, Kwale) experience flash flooding from intense short rains. In western Kenya, Budalangi (Busia County) is among the most flood-prone areas due to the overflow of the Nzoia River. (Source: NDMA; regional flood records.)",
+    "source": "county_notes.md",
+    "chunk": 5
+  },
+  {
+    "id": 19,
+    "text": "ORIGINAL ARTICLE Diversified flood governance and related socio-spatial vulnerability in Tana River County, Kenya Anita Nyapala Okoko, PhD Fellow Norwegian University of Life Sciences, Norway Correspondence Anita Nyapala Okoko, Norwegian University of Life Sciences, Elizabeth Stephansens v. 15, 1433 Ås, Norway. Email: anita.okoko@nmbu.no or nyapala.anita@gmail.com Abstract What are the consequential socio-spatial vulnerabilities of fragmentation in flood risk governance (FRG) functions in Tana River County, Kenya?",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 0
+  },
+  {
+    "id": 20,
+    "text": "lnerabilities of fragmentation in flood risk governance (FRG) functions in Tana River County, Kenya? To answer the question, this paper utilises social differentiation theory to establish types and con- sequences of such fragmentation . It applies theoretical pat- terns and processes of social d ifferentiation to expose that FRG diversification could result in fragmentation of FRG func- tions. The study employs an interview strategy that focuses on governmental and non-governmental FRG actors.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 1
+  },
+  {
+    "id": 21,
+    "text": "he study employs an interview strategy that focuses on governmental and non-governmental FRG actors. The results reveal that fragmente d FRG functions in Tana River County was not an intentional policy decision, but rather a product of a transitional vacuum between policy promulgation and implementation. Furthermore, socio-spatial vulnerabilities differentiated by patterns and processes related to age, gen- der, disability, and ethnicity, for instance, are consequential outcomes of fragmented FRG functions in the Tana River floodplains.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 2
+  },
+  {
+    "id": 22,
+    "text": "for instance, are consequential outcomes of fragmented FRG functions in the Tana River floodplains. The study recommends implementation of the National Disaster Management Policy in Tana River County and institutionalisation of a specific FRG policy and legal framework.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 3
+  },
+  {
+    "id": 23,
+    "text": "t Policy in Tana River County and institutionalisation of a specific FRG policy and legal framework. KEYWORDS differentiation, diversification, flood risk, fragmentation, governance, vulnerability Received: 24 January 2023 Accepted: 9 February 2024 DOI: 10.1111/disa.12648 This is an open access article under the terms of the Creative Commons Attribution-NonCommercial License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes. © 2024 The Author(s).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 4
+  },
+  {
+    "id": 24,
+    "text": "d the original work is properly cited and is not used for commercial purposes. © 2024 The Author(s). Disasters published by John Wiley & Sons Ltd on behalf of ODI. Disasters. 2024;48:e12648. wileyonlinelibrary.com/journal/disa 1o f1 9 https://doi.org/10.1111/disa.12648 1 | INTRODUCTION Floods are a frequent cause of massive devastation (Jonkman, 2005; Nygren, 2016). People choose or have no other choice but to live in dynamic coastal zones and floodplains in pursuit of the ecosystem services therein, which fuel their livelihood activities (Imeson, 2012).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 5
+  },
+  {
+    "id": 25,
+    "text": "in pursuit of the ecosystem services therein, which fuel their livelihood activities (Imeson, 2012). People who live in coastal floodplains are at risk of the impacts of climate change and other economic developments that affect riverine and tidal flooding (Shampa et al., 2021). While the flood source is the river channel, to cause devastation, characteristics of overflow, such as speed of onset, magni- tude, spatial extent, and depth, must interact with human settlements exposed and vulnerable to such features (Franke, 2004; Wisner et al., 2014; Montz, Tobin, and Hagelman, III, 2017).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 6
+  },
+  {
+    "id": 26,
+    "text": "nerable to such features (Franke, 2004; Wisner et al., 2014; Montz, Tobin, and Hagelman, III, 2017). Therefore, in the face of climate change, flood risk governance (FRG) is not only a matter that flood risk management (FRM) actors and decision-making process es must address to reduce or mitigate the impacts of flooding. In addition, it also poses a challenge to adaptati on and transformation, because it concerns overseeing FRM strategies for actions regardin g flood defence, prevention, mitigation, protection, and recovery (Gralepois, 2020).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 7
+  },
+  {
+    "id": 27,
+    "text": "ctions regardin g flood defence, prevention, mitigation, protection, and recovery (Gralepois, 2020). FRG includes actor networks, discourses, an d multi-level coordination mechanisms in the pursuit of FRM (Alexander, Doorn, and Priest, 2018). The classical or traditional FRG pattern centres on a prevention-oriented approach, focu sing on infrastructural flood defences such as dams and dikes (De Bruijn and Klijn, 2001 ; van Popering-Verkerk and van Buuren, 2017 ). The classical or traditional FRG pattern concen- trates on infrastructure.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 8
+  },
+  {
+    "id": 28,
+    "text": "k and van Buuren, 2017 ). The classical or traditional FRG pattern concen- trates on infrastructure. An alternative integrated approach has its foundations in integrated watershed man- agement, especially for arid and semi-arid areas, such a s the Tana River County in Kenya, where flexibility is required to manage water scarcity in periods of dr ought and surpluses in times of floods (Bouwer, 2002).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 9
+  },
+  {
+    "id": 29,
+    "text": "red to manage water scarcity in periods of dr ought and surpluses in times of floods (Bouwer, 2002). Diver- s i f i c a t i o no fF R Gs t r a t e g i e si sw i d e l yr e g a r d e da san e c essary step forward to lessen the likelihood and magni- tude of flooding, as well as to minimise the exposure of people and property, and in turn, the disruption, economic damage, health impacts, and other adverse co nsequences that ensue when floods occur (Gilissen et al., 2016).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 10
+  },
+  {
+    "id": 30,
+    "text": "ealth impacts, and other adverse co nsequences that ensue when floods occur (Gilissen et al., 2016). However, despite the political a nd instrumental efforts associate d with the diversification of FRG, the ramifications of floods are still devastating (Gralepois, 2020). Not all diversification of FRG affects socio-spatial vulnerability. However, a likely and inevitable outcome of diversification is that it can lead to fragmentation within FRG function areas and strategies, which can prove detri- mental to the effectiveness of FRG (Gilissen et al., 2016).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 11
+  },
+  {
+    "id": 31,
+    "text": "s and strategies, which can prove detri- mental to the effectiveness of FRG (Gilissen et al., 2016). Hence, in many diversified strategies, FRG turns into a mat- ter of adaptation and self-responsibilitisation, which does not account for the socio-spatial distribution of vulnerabilities (Nygren, 2016). By overlooking the socio-spatial distribution of vulnerabilities, fragmentation in FRG strategies could create social inequalities. Existing scholarship on social inequalities links differentiation to social hierarchisation, and differ- ence to social inequalities (Lee and Juteau, 2003, pp.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 12
+  },
+  {
+    "id": 32,
+    "text": "iation to social hierarchisation, and differ- ence to social inequalities (Lee and Juteau, 2003, pp. 8, 10). Hierarchisation in this case is the distribution of respon- sibilities between actors and governing rules enacted within different policy domains in FRG, which affect social inequalities. Lee and Juteau ( 2003) state that to understand the processes of social differentiation and its outcomes, social differences need to be comprehended and explained.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 13
+  },
+  {
+    "id": 33,
+    "text": "f social differentiation and its outcomes, social differences need to be comprehended and explained. Apropos of flood protection governance within an institutionally fragmented environment, the development of public–private financing and implementation mechanisms for flood prevention and preparedness are differentiated by functions and areas, and the degree to which safety or risk of flooding is considered as optimal (Broekhans and Correljé, 2008).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 14
+  },
+  {
+    "id": 34,
+    "text": "degree to which safety or risk of flooding is considered as optimal (Broekhans and Correljé, 2008). A novel finding is that social differentiation in flood impacts is relatively small soon after a flood, but widens over time, with socially disadvantaged groups enjoying less recovery (Houston et al., 2021).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 15
+  },
+  {
+    "id": 35,
+    "text": "widens over time, with socially disadvantaged groups enjoying less recovery (Houston et al., 2021). Thus, in flood- plains such as the Tana River Delta, where decisions concerning financing and implementation of FRM mainly focus on the emergency (Okoko, 2022b), socio-spatial vulnerabilities owing to long-term flood impacts are easily over- looked in FRG and therefore continue to worsen with each flood experience.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 16
+  },
+  {
+    "id": 36,
+    "text": "impacts are easily over- looked in FRG and therefore continue to worsen with each flood experience. In addition, changes in flooding resulting from climate change impacts may also alter the spatial differentiation of vulnerability depending on the sen- sitivities and adaptive capacities of groups inhabiting floodplains (Coulibaly et al., 2015).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 17
+  },
+  {
+    "id": 37,
+    "text": "e sen- sitivities and adaptive capacities of groups inhabiting floodplains (Coulibaly et al., 2015). The coastal Tana River Delta continues to face seaward global warming impacts, such as increased coastal erosion and salinisation, as well as 2o f1 9 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 18
+  },
+  {
+    "id": 38,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License hinterland climate change impacts, such as flash floods followed by long spells of drought (Kairu, 1997; Opere, 2013; Gitau et al., 2021).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 19
+  },
+  {
+    "id": 39,
+    "text": "h as flash floods followed by long spells of drought (Kairu, 1997; Opere, 2013; Gitau et al., 2021). This paper uses Tana River County, Kenya, as a case to contribute knowledge on the consequences of diversified FRG and resultant fragmentation for socio-spatial vulnerabilities. It aims to explore how fragmentation in FRG for the Tana River catchment affects socio-spatial inequalities, which reflect in socio-spatial vulnerability to floods.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 20
+  },
+  {
+    "id": 40,
+    "text": "atchment affects socio-spatial inequalities, which reflect in socio-spatial vulnerability to floods. To do so, this paper triangulates results from key informant interviews conducted within state and non-state agencies in the Tana Delta Sub-County with a document review of existing FRM policies in Kenya, including Tana River County. The paper then utilises social differentiation theory to establish the types and consequences of fragmentation in FRG in Tana River County.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 21
+  },
+  {
+    "id": 41,
+    "text": "tiation theory to establish the types and consequences of fragmentation in FRG in Tana River County. Ultimately, it seeks to answer the following research question: ‘What are the consequen- tial socio-spatial vulnerabilities of fragmentation in FRG functions in Tana River County, Kenya? ’ 1.1 | Theoretical background Priority 2 of the Sendai Framework for Disaster Risk Reduction (SFDRR) 2015 –2030 articulates strengthening disas- ter risk governance to manage disaster risk.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 22
+  },
+  {
+    "id": 42,
+    "text": "ion (SFDRR) 2015 –2030 articulates strengthening disas- ter risk governance to manage disaster risk. 1 The SFDRR emphasises the importance of mainstreaming and integrat- ing disaster risk reduction (DRR) within and across all sectors to review and promote coherence — coherence in disaster risk governance, however, was a pre-existing challenge in African countries (Sorell, 2013).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 23
+  },
+  {
+    "id": 43,
+    "text": "disaster risk governance, however, was a pre-existing challenge in African countries (Sorell, 2013). While the SFDRR calls for integrated FRG, diversification in FRG strategies is a European Union policy and project concept focused on flood resilience, seeking to distinguish strategies of prevention, protection, preparedness, emergency response, and recovery (Oosterberg, Drimmelen, and Van der Vlist, 2005; Hegger et al., 2013). A major problem with the diversifi- cation of FRG strategies is that each way of doing so will not be feasible everywhere (Hegger et al., 2014).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 24
+  },
+  {
+    "id": 44,
+    "text": "f FRG strategies is that each way of doing so will not be feasible everywhere (Hegger et al., 2014). Diversification of FRG may also imply that new or more actors acquire a role in FRM, adding complexities and poten- tial conflicts of interest (Broekhans and Correljé, 2008; Meijerink and Dicke, 2008; Hegger et al., 2014). Therefore, FRG actors have distinct roles and interests, as well as different policy issues of concern in terms of contributions to the resilience of the floodplain.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 25
+  },
+  {
+    "id": 45,
+    "text": "as different policy issues of concern in terms of contributions to the resilience of the floodplain. Actors may differ in their interpretation of what socio-spatial vulnerabilities there are and how they should address them, which may hinder any changes at all that would benefit groups and individuals living in and depending on the floodplain.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 26
+  },
+  {
+    "id": 46,
+    "text": "changes at all that would benefit groups and individuals living in and depending on the floodplain. Governance consists of the ways in which multiple and different actors behave, operate, interact, and confront each other in relation to the decision-making process on public affairs, which includes risks and disasters (Forino, Bonati, and Calandra, 2018). The concept of fragmentation in governance concerns the extent to which the world is composed of distinct clusters or divisions, regional or sectoral, of governmental organisation-based cooperation (Greenhill and Lupu, 2017).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 27
+  },
+  {
+    "id": 47,
+    "text": "ns, regional or sectoral, of governmental organisation-based cooperation (Greenhill and Lupu, 2017). These distinct divisions attend to distinct functions, such as FRG functions. Therefore, they facilitate different decision-making processes and either shared or specialised responsibilities pertaining to FRM. These responsibilities concern specific FRM strategy actions and thus require specific competencies. Fragmen- tation in this case goes beyond institutions and their FRG functions to encompass their responsibilities and individual and/or holistic competencies for tackling FRM.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 28
+  },
+  {
+    "id": 48,
+    "text": "ns to encompass their responsibilities and individual and/or holistic competencies for tackling FRM. Flood risk is a regional governance issue because it happens in geopolitical regions, countries such as Kenya, and in specific sections of such regions, including river catchments such as the Tana River. It is also a sectoral governance issue because flood impacts affect sectors such as food and agriculture, health, energy, housing, wildlife, trade and commerce, education, and transportation.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 29
+  },
+  {
+    "id": 49,
+    "text": "d agriculture, health, energy, housing, wildlife, trade and commerce, education, and transportation. When FRG functions are integrated, there is central coordination region- ally and between sectors and strategies (Gilissen et al., 2016). When FRG functions are diversified, regional and sec- toral authorities, public, private, and non-profit, must cooperate, each bringing their own contributions and interests to FRM strategies (Hegger et al., 2014; Gilissen et al., 2016). Diversification in FRG functions thus translates into diversification in FRM strategies.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 30
+  },
+  {
+    "id": 50,
+    "text": "al., 2016). Diversification in FRG functions thus translates into diversification in FRM strategies. In some cases, the focus will shift to what involved actors must do, and how they must do it. This shift depends on their institutional structures and processes, which alienates them from the recipients of FRM and the residents of floodplains, as well as their socio-spatial vulnerabilities (Nygren, 2016). OKOKO 3o f1 9 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 31
+  },
+  {
+    "id": 51,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Such diversification in FRG functions could produce the unintentional consequence of fragmentation in FRG, rep- roducing socio-spatial inequalities, which in turn link with the socio-spatial vulnerabilities of floodplain inhabitants. Gilissen et al.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 32
+  },
+  {
+    "id": 52,
+    "text": "which in turn link with the socio-spatial vulnerabilities of floodplain inhabitants. Gilissen et al. ( 2016) identify four main situations of fragmentation in FRG in Europe:  Type 1 fragmentation refers to situations in which distinct actors operating in different policy domains pursue dif- ferent FRM strategies. The entire existence of FRG is to ensure that the strategies in different policy areas for FRM work together effectively to reduce vulnerability and manage risk.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 33
+  },
+  {
+    "id": 53,
+    "text": "in different policy areas for FRM work together effectively to reduce vulnerability and manage risk. However, when each policy domain has different actors and they act autonomously or semi-autonomously without a central coordinating agency, harmonisation of FRM outputs may be difficult to coordinate and achieve.  Type 2 fragmentation refers to situations in which distinct actors operating in the same policy domain pursue the same FRM strategy.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 34
+  },
+  {
+    "id": 54,
+    "text": "ituations in which distinct actors operating in the same policy domain pursue the same FRM strategy. This scenario presents a situation where FRG actors address the same policy issue; with poor coordination or communication there could be poor implementation of strategies because each actor would think that the other should be responsible.  Type 3 fragmentation refers to situations in which distinct actors operating in different policy domains pursue the same FRM strategy.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 35
+  },
+  {
+    "id": 55,
+    "text": "uations in which distinct actors operating in different policy domains pursue the same FRM strategy. This has similar consequences to the one above except that it will involve specific activities with regard to FRM strategies.  Type 4 fragmentation refers to situations in which distinct actors operating in the same policy domain pursue different FRM strategies. In this case, there could be poor harmonisation between strategies that are dependent on each other, or delays, owing to financing or resource allocation for one activity that could result in delays in other activities. Gilissen et al.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 36
+  },
+  {
+    "id": 56,
+    "text": "esource allocation for one activity that could result in delays in other activities. Gilissen et al. ( 2016) depict fragmentation in the European case as differentiated by policy, actor, and FRM strat- egy implementation. There are no similar studies presenting a Kenyan case. Policies, actors, and strategy implemen- tation are all components of society that hinge on multidimensional political, economic, cultural, and normative processes, which may or may not be affected by functional hierarchisation (Lee and Juteau, 2003).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 37
+  },
+  {
+    "id": 57,
+    "text": "ve processes, which may or may not be affected by functional hierarchisation (Lee and Juteau, 2003). Understanding the patterns, categorisations, and hierarchisation behind the political, economic, cultural, and normative processes of FRG fragmentation could be essential in explaining how socio-spatial inequalities and, in turn, vulnerabilities can be traced to applying diversified FRG in floodplains, where it may not be feasible. Patterns, categorisations, and hierarchisation are concepts in the theory of social differentiation.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 38
+  },
+  {
+    "id": 58,
+    "text": "Patterns, categorisations, and hierarchisation are concepts in the theory of social differentiation. Social differentiation theory assumes that societies internally are highly diverse and differentiated, and differ- ences proceed from the more general to the more special (Albert, 2016, p. 48). The theory in its original form views functional differentiation, which equates to fragmentation, as a positive step in development.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 39
+  },
+  {
+    "id": 59,
+    "text": "views functional differentiation, which equates to fragmentation, as a positive step in development. Fragmentation allows the more specialised functional units to make changes and decisions easily concerning their functions and strategies— functional differentiation has had proven success in solving former fundamental social problems (Albert, 2016).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 40
+  },
+  {
+    "id": 60,
+    "text": "differentiation has had proven success in solving former fundamental social problems (Albert, 2016). Lee and Juteau ( 2003) underlined that previous arguments against functional differentiation in the application and development of the theory by scholars such as Spencer ( 1887), Durkheim ( 1893), Parsons ( 1985), Luhmann (1982, 1995), and Alexander and Colomy ( 1990) were incomplete as they did not answer questions regard- ing how social categories manifest or their construction.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 41
+  },
+  {
+    "id": 61,
+    "text": "e as they did not answer questions regard- ing how social categories manifest or their construction. Lee and Juteau ( 2003) argued that social groups are interre- lated, with majorities and minorities socially constituted through hierarchisation and unequal life chances. In disaster research, scholars such as Clausen ( 1992) suggested that to explain disasters sociologically, one ought to start with social differentiation theory, because the most dangerous feature making a society prone to such events is its social differentiation between problem-solvers and problem laymen.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 42
+  },
+  {
+    "id": 62,
+    "text": "ciety prone to such events is its social differentiation between problem-solvers and problem laymen. Tompkins and Adger ( 2004) pointed out that climate change impacts, such as increased flooding, are spatially and socially differentiated partially because institutional parameters determine the underlying vulnerability and adaptive capacity of societies. A recent study by Houston et al. ( 2021) concluded that vulnerability to flooding was sensitive to financial resources and institutional support.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 43
+  },
+  {
+    "id": 63,
+    "text": "luded that vulnerability to flooding was sensitive to financial resources and institutional support. Furthermore, a study in Kenya by Wairimu Ng'ang'a and Crane ( 2020) asserted that adaptation to climate change is a contingent process highly influenced by wealth, age, and gender, because these factors shape the posi- tions from which actors negotiate, engage in, and evaluate different technical adaptation practices. 4o f1 9 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 44
+  },
+  {
+    "id": 64,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Lee and Juteau ( 2003) developed the theory of social differentiation in an open analytical sense, which could explain the patterns and processes behind the categories and hierarchisation of social differences and differentiation.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 45
+  },
+  {
+    "id": 65,
+    "text": "s and processes behind the categories and hierarchisation of social differences and differentiation. They did so by viewing social differentiation as a product of social inequality as well as an instrument for its repro- duction. Hence, this approach pays attention to political processes, norms, and representations, and to social policies; more specifically, to how they shape economic functioning and relate to normative definitions.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 46
+  },
+  {
+    "id": 66,
+    "text": "cies; more specifically, to how they shape economic functioning and relate to normative definitions. FRG fragmentation is already a clustering process, meaning that there is hierarchical and sectoral differentiation in existing institutional functions and processes. Therefore, Lee and Juteau's (2003) patterns and processes of social differentiation are appropriate to understand the types of FRG fragmentation in Kenya, including in Tana River County, its norms and processes, and its consequences for the floodplains.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 47
+  },
+  {
+    "id": 67,
+    "text": ", including in Tana River County, its norms and processes, and its consequences for the floodplains. The theory then offers the opportunity to reflect on the patterns via which the processes of FRG differentiation affect the laymen, the recipients of FRM. Lee and Juteau ( 2003) set out these patterns, related to age, gender, ethnicity/race, and region/location. This paper reveals how these patterns echo the processes of fragmented FRG and attempts to analyse if any other patterns of social differentiation emerge from the area under review.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 48
+  },
+  {
+    "id": 68,
+    "text": "tempts to analyse if any other patterns of social differentiation emerge from the area under review. 1.2 | Methodology 1.2.1 | Study context Tana River County is the study area in this paper (see Figure 1). It contains a large part of the lower catchment of Kenya's longest and most expansive river catchment, the Tana River, and the Tana River Delta (Geeraert et al., 2015; Leauthaud et al., 2017). Flood inundation canals and floodplain agriculture are implemented complementarily in the FIGURE 1 Tana River County location. Source: Okoko (2022b).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 49
+  },
+  {
+    "id": 69,
+    "text": "e are implemented complementarily in the FIGURE 1 Tana River County location. Source: Okoko (2022b). OKOKO 5o f1 9 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 50
+  },
+  {
+    "id": 70,
+    "text": "Online Library for rules of use; OA articles are governed by the applicable Creative Commons License study area by Giriama, Goshi, and Pokomo ethnic communities and by pastoralist communities, Orma, Somali, and Wardey, as well as by the Wata, hunter gatherers (Okoko, 2022a, 2022b; Zenebe et al., 2022). These communities both depend on floodplain ecosystem services and contend with the destructive impacts of floods, which promote and disrupt their livelihoods (Terer, Ndiritu, and Gichuki, 2004; Leauthaud et al., 2013).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 51
+  },
+  {
+    "id": 71,
+    "text": "h promote and disrupt their livelihoods (Terer, Ndiritu, and Gichuki, 2004; Leauthaud et al., 2013). Kenya does not have a law that governs DRR; it is still a Senate bill (Government of Kenya, 2021). However, there has been a National Policy for Disaster Management (NPDM) in Kenya since March 2009, which was formu- lated to institutionalise mechanisms for addressing disasters (Government of Kenya, 2009).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 52
+  },
+  {
+    "id": 72,
+    "text": "as formu- lated to institutionalise mechanisms for addressing disasters (Government of Kenya, 2009). The NPDM mandates the Ministry of Special Programmes in the Office of the President to coordinate DRR initiatives within a unified pol- icy framework in an initiative-taking manner at all levels. This includes the establishment and strengthening of disas- ter management institutions and partnerships, networking, and mainstreaming DRR in the development process to strengthen the resilience of vulnerable groups to cope with potential disasters.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 53
+  },
+  {
+    "id": 73,
+    "text": "elopment process to strengthen the resilience of vulnerable groups to cope with potential disasters. However, this document preceded the SFDRR and devolution to a county governance system; an amendment to reflect this reality is absent. In 2013, the National Disaster Management Unit (NDMU) was established by a Presidential Directive as an effective and competent disaster management body with an established command structure, budget, and standard operating procedures (SOPs) based on best practices (Government of Kenya, 2024).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 54
+  },
+  {
+    "id": 74,
+    "text": "udget, and standard operating procedures (SOPs) based on best practices (Government of Kenya, 2024). Together with the Ministry of Interior and Coordination of National Government, the NDMU developed a National Emergency Response Plan (NERP) and SOPs (Government of Kenya, 2024) and the National Disaster Manual – Basic Incident Management Guidelines in 2014. Additional national policy documents for DRR include the Food and Nutrition Security Policy of 2011 and its Implementation Framework of 2018.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 55
+  },
+  {
+    "id": 75,
+    "text": "DRR include the Food and Nutrition Security Policy of 2011 and its Implementation Framework of 2018. On 30 October 2020, nine months after the completion of this study, the Tana River County Disaster Risk Man- agement Act, No. 6 of 2020 passed into law. Later, on 23 May 2022, Tana River County unveiled its Disaster Risk Management Policy (DRMP). 1.2.2 | Methods Formal interview sampling applied the snowball approach (Babbie, 2008; Ritchie, 2015).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 56
+  },
+  {
+    "id": 76,
+    "text": "2.2 | Methods Formal interview sampling applied the snowball approach (Babbie, 2008; Ritchie, 2015). At the beginning of field- work, a formal interview at the National Disaster Operations Centre (NDOC) in Nairobi made known the government institutions, non-governmental organisations (NGOs), and other actors involved in providing flood security in Tana River County.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 57
+  },
+  {
+    "id": 77,
+    "text": "al organisations (NGOs), and other actors involved in providing flood security in Tana River County. The formal interview with the NDOC revealed that all Tana River County government departments, national government line ministries, NGOs, and community-based organisations (CBOs) are part of the DRR steering group coordinated by the Ministry of Interior and Coordination of National Government. Officers in these ministries, departments, and organisations comprised the key informants; interviewing one led to information on how to con- tact others.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 58
+  },
+  {
+    "id": 78,
+    "text": "ations comprised the key informants; interviewing one led to information on how to con- tact others. The study sampled the following agencies and NGOs for formal interviews: World Food Programme (WFP); the Food and Agriculture Organization of the United Nations (FAO); the United Nations Children's Fund (UNICEF); the Kenya Red Cross Society (KRCS); Concern Worldwide; Nature Kenya; and Maridhiano CBO.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 59
+  },
+  {
+    "id": 79,
+    "text": "d (UNICEF); the Kenya Red Cross Society (KRCS); Concern Worldwide; Nature Kenya; and Maridhiano CBO. The study sampled the following national government institutions: State Department for Economic Planning; Tana River County Education Office; National Drought Management Authority (NDMA); National Environment Man- agement Authority (NEMA); Water Resources Authority (WRA); Ministry of Health (MoH); and the Kenya Wildlife Service (KWS).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 60
+  },
+  {
+    "id": 80,
+    "text": "A); Water Resources Authority (WRA); Ministry of Health (MoH); and the Kenya Wildlife Service (KWS). The Tana River County government offices sampled included Gender, Sports, Youth and Culture, Land Use Planning, Water, Environment and Mineral Resources, and Special Programmes. Another sampled office was the National Assembly Office, Garsen Constituency. Furthermore, the study sampled the Tana and Athi Rivers Development Authority (TARDA), a regional government entity charged with the management and use of trans- county resources of the Athi and Tana Rivers.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 61
+  },
+  {
+    "id": 81,
+    "text": "t entity charged with the management and use of trans- county resources of the Athi and Tana Rivers. The interviews took place at organisational offices and lasted between 20 and 40 minutes. The topics discussed included FRG and other functions of the organisation or department, the challenges faced because of diversification 6o f1 9 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 62
+  },
+  {
+    "id": 82,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License of FRG functions, such as decision-making, financing, and implementation, FRM gaps in Tana River County, and exis- ting and new socio-spatial inequalities among groups living in the Tana River floodplains. Table 1 shows the respondent organisations and the title and biological sex of the participants.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 63
+  },
+  {
+    "id": 83,
+    "text": "ns. Table 1 shows the respondent organisations and the title and biological sex of the participants. TABLE 1 Interview respondents.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 64
+  },
+  {
+    "id": 84,
+    "text": "t organisations and the title and biological sex of the participants. TABLE 1 Interview respondents. Respondent organisation Title of respondent Biological sex of respondent (M = male; F = female) NDOC Director of Disaster Operations M NDMA Resilience Officer M Field Officer F Nature Kenya Programme Manager M Secretary F Extension Officer M Concern Worldwide Project Manager F Field Officer M UNICEF Nutrition Officer M WFP Programme Manager M Maridhiano CBO Project Manager M County Urban Planning Ministry Chief Officer F Directorate of Education, Tana River County County Director M TARDA, Tana Delta Irrigation Project Project Manager M Assistant Project Manager M WRA Project Manager M Ministry of Agriculture County Director M Livestock Department County Officer M County Water Department Director M County Gender and Social Services Department Director F County Ministry of Special Programmes Director M County Ministry of Environment and Mineral Resources Director M MoH, Garsen Public Health Officer M Clinical Officer F NEMA Officer F KRCS Community Chairperson, Tana River County M KWS Warden, Tana Delta M FAO Project Officer, Tana River County M State Department for Economic Planning Director M Kenya National Assembly Member for Garsen M Source: author.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 65
+  },
+  {
+    "id": 85,
+    "text": "artment for Economic Planning Director M Kenya National Assembly Member for Garsen M Source: author. OKOKO 7o f1 9 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 66
+  },
+  {
+    "id": 86,
+    "text": "Online Library for rules of use; OA articles are governed by the applicable Creative Commons License This study triangulated formal interview data from sta te and non-state agencies with a document review of the legal framework governing FRM in Kenya, including Tana River County. The national policy documents selected for review were the NPDM, NERP and its SOPs, the National Disaster Manual – Basic Incident Man- agement Guidelines, and the Sessiona l Paper No. 8 of 2012 on the National Policy for the Sustainable Develop- ment of Northern Kenya and other Arid Lands (hereaft er ASAL Policy).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 67
+  },
+  {
+    "id": 87,
+    "text": "y for the Sustainable Develop- ment of Northern Kenya and other Arid Lands (hereaft er ASAL Policy). County documents reviewed were the Tana River County Disaster Management Act and the Ta na River County's DRMP. All consist of strategies, structures, and institutions for FRM and are vital for un derstanding the reproduction of socio-spatial inequal- ities and hence vulnerabilities in the case study area.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 68
+  },
+  {
+    "id": 88,
+    "text": "g the reproduction of socio-spatial inequal- ities and hence vulnerabilities in the case study area. Interview questions spanned the functions of the acto r in question in Tana River County, the specific FRG functions of the organisation, the challenges it faces in i mplementing its functions during floods, how the orga- nisation works with other entities involved in FRG in T ana River County, and the challenges posed by this coop- eration, the FRM gaps confronted by the organisation, and their causes.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 69
+  },
+  {
+    "id": 89,
+    "text": "allenges posed by this coop- eration, the FRM gaps confronted by the organisation, and their causes. Lastly, there was a question on the socio-spatial vulnerabilities encountered in Tana Rive r County while implementing programmes, the vulnerable groups or areas, and the particular challenges to imple menting programmes for specific groups or in specific areas.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 70
+  },
+  {
+    "id": 90,
+    "text": "and the particular challenges to imple menting programmes for specific groups or in specific areas. 1.2.3 | Materials and data analysis The materials analysed for this study are legal and policy documents governing FRM in Kenya and specifically Tana River County (see the study context subsection abov e), as well as transcripts of audio and written formal interviews. The main codebook for analysis (see Table 2) shows the principal themes of segment extraction from these resources.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 71
+  },
+  {
+    "id": 91,
+    "text": "ok for analysis (see Table 2) shows the principal themes of segment extraction from these resources. They include situations of frag mentation in FRG functions in Tana River County, the challenges this presents for FRM stra tegy decisions and implementation, the resultant FRM gaps, and socio- spatial inequalities in relation to the subthemes of age , gender, ethnicity, and regionality, based on Lee and Juteau ( 2003). The analysis interprets coded segments subjectively and explains them using patterns and pro- cesses of social differentiation.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 72
+  },
+  {
+    "id": 92,
+    "text": "ed segments subjectively and explains them using patterns and pro- cesses of social differentiation. 1.2.4 | Ethical considerations This study obtained approval from the Norwegian Centre for Research Data to conduct fieldwork on human subjects. It also obtained a National Commission for S cience, Technology, and Innovation permit to carry out a study with human subjects in Kenya.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 73
+  },
+  {
+    "id": 93,
+    "text": "n for S cience, Technology, and Innovation permit to carry out a study with human subjects in Kenya. An additional approval was acquired from the Ministry of Inte- rior and Coordination of National Government, Tana River County, because it is the coordinator of the County Steering Group on DRR and the authority that ga ve permission to interview national government officers in Tana River County. The author also obtai ned approval from Tana River's Office of the County Secretary for interviews with county government officers. TABLE 2 Codebook.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 74
+  },
+  {
+    "id": 94,
+    "text": "r's Office of the County Secretary for interviews with county government officers. TABLE 2 Codebook. Name Description Challenges of fragmentation Issues resulting from fragmentation of FRM function areas. Diversification FRM roles and function areas of different actors in Tana River County. FRM gaps Unaddressed FRM challenges in the Tana River floodplains. Socio-spatial inequalities Differentiation by age, gender, ethnicity, and regionality. Source: author.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 75
+  },
+  {
+    "id": 95,
+    "text": "cio-spatial inequalities Differentiation by age, gender, ethnicity, and regionality. Source: author. 8o f1 9 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 76
+  },
+  {
+    "id": 96,
+    "text": "Online Library for rules of use; OA articles are governed by the applicable Creative Commons License 1.3 | Results This section exposes the study's findings on how fragmented functions in FRG affect and keep reproducing socio- spatial inequalities and vulnerabilities to floods in the Tana River floodplains, in line with the coded themes.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 77
+  },
+  {
+    "id": 97,
+    "text": "ualities and vulnerabilities to floods in the Tana River floodplains, in line with the coded themes. The first subsection looks at the history of diversified disaster risk governance in Kenya and issues surrounding how diversi- fied FRG still exists in FRM even after the promulgation of the National Disaster Management Policy (NDMP) in 2009, which contained strategies for an integrated approach to disaster risk management. In addition, it also illus- trates the fragmented functions and roles.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 78
+  },
+  {
+    "id": 98,
+    "text": "to disaster risk management. In addition, it also illus- trates the fragmented functions and roles. The second subsection explores socio-spatial inequalities among groups and locations in the Tana River floodplains. The third subsection reveals current challenges due to fragmented FRG functions and FRM gaps in policy and practice, including a focus on drought management over flood management.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 79
+  },
+  {
+    "id": 99,
+    "text": "and FRM gaps in policy and practice, including a focus on drought management over flood management. 1.3.1 | Diversified FRM in Kenya and Tana River County According to the Director of Disaster Operations in Kenya, the main function of the NDOC in Nairobi is to coordi- nate everything to do with disaster issues and ensure that operations are legitimate, as well as to report to the SFDRR Secretariat.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 80
+  },
+  {
+    "id": 100,
+    "text": "ter issues and ensure that operations are legitimate, as well as to report to the SFDRR Secretariat. From the interview, it was clear that flood disaster issues are blanketed under other disasters, except for drought, and that their governance is responsive and fragmented among all actors involved in FRG, includ- ing national government line ministries, county government ministries and departments, private sector institutions, regional government authorities, international and local NGOs, CBOs, and faith-based organisations (FBOs).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 81
+  },
+  {
+    "id": 101,
+    "text": "al government authorities, international and local NGOs, CBOs, and faith-based organisations (FBOs). A review of the NDMP reveals that the policy did not lead to diversified FRG. In fact, it calls for integrated man- agement of disasters and mainstreaming in development processes. From the time of the NDMP's promulgation in 2009 to the flagship of the NDMU, the NERP, and the SOPs in 2013 and 2014, there was a transitional vacuum in FRG in Kenya. First, the policy design was a centre –periphery system and could not be easily translated into a devolved system of government without an amendment.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 82
+  },
+  {
+    "id": 102,
+    "text": "system and could not be easily translated into a devolved system of government without an amendment. In addition, the National Disaster Management Act was not in place— it remains a bill. Consequently, the system of fragmentation of FRG functions filled the transitional vacuum and became the norm, dominated by flood emergency rescue and response activities. In addition, there was not, and there still is not, a flood management policy or authority in Kenya.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 83
+  },
+  {
+    "id": 103,
+    "text": "In addition, there was not, and there still is not, a flood management policy or authority in Kenya. NDOC correspondence indicated that in other floodplains, such as the River Nzoia floodplains, synonymous with the Budalangi floods of 2007, the WRA applied its integrated water resource management framework to manage floods with the community. The system was successful, with the WRA coordinating resettlement, flood defences, the emergency warning system, and floodplain land use for agricultural production and water supply.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 84
+  },
+  {
+    "id": 104,
+    "text": "the emergency warning system, and floodplain land use for agricultural production and water supply. However, in Tana River, NDOC revealed that FRG was a function shared not just by national and county govern- ment departments, but also by other stakeholders. For instance, KenGen (the electricity generation company manag- ing the Seven Forks scheme dams in the upper catchment of the Tana River), TARDA, international and local NGOs, and CBOs and FBOs all had specific projects in Tana River County.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 85
+  },
+  {
+    "id": 105,
+    "text": "RDA, international and local NGOs, and CBOs and FBOs all had specific projects in Tana River County. Drought management, however, is different from other disasters because Kenya Vision 2030 and its ASAL Pol- icy recognises drought and institutes a special system to govern it. The NDMA addresses drought risk with clear structures, funding, and response and monitoring mechanisms. In arid and semi-arid lands such as Tana River County, a focus on drought in policy encourages dryland farming close to settlements or in riverine/low-lying areas for local food security.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 86
+  },
+  {
+    "id": 106,
+    "text": "ourages dryland farming close to settlements or in riverine/low-lying areas for local food security. Floods and droughts both call for food security interventions. However, it is clear from the develop- ment agenda of Kenya, fragmentation in food security strategies for droughts and other disasters, such as floods, leads to conflicting disaster risk management functions. Drought management policy encourages people to settle and farm on riverbanks for food security; an action that puts them at risk during floods.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 87
+  },
+  {
+    "id": 107,
+    "text": "to settle and farm on riverbanks for food security; an action that puts them at risk during floods. In Tana River County, actors and strategies differentiate the situations surrounding FRG fragmentation, as shown in Figure 2. According to the formal interviews, there are seven main FRG areas in Tana River County: flood monitoring; water course and water resource management; flood prevention; emergency warning services; OKOKO 9o f1 9 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 88
+  },
+  {
+    "id": 108,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License emergency rescue and relief; coordination, monitoring, and evaluation; and recovery and rebuilding.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 89
+  },
+  {
+    "id": 109,
+    "text": "emergency rescue and relief; coordination, monitoring, and evaluation; and recovery and rebuilding. In Figure 2, the black arrows link to institutions involved in governing flood prevention and defence, which includes flood monitoring at the standard measuring gauges, dam and dike management, and watercourse and water resources management. The grey arrows link to institutions governing emergency response functions, which include emergency warning sys- tems and emergency rescue and relief.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 90
+  },
+  {
+    "id": 110,
+    "text": "gency response functions, which include emergency warning sys- tems and emergency rescue and relief. The blue arrows link to institutions governing recovery and rebuilding func- tions, whereas the dashed lines link to institutions governing coordination, monitoring, and evaluation of flood emergency response, rebuilding, and recovery interventions. Figure 2 clearly shows fragmentation of functions both among and within the different institutions.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 91
+  },
+  {
+    "id": 111,
+    "text": "Figure 2 clearly shows fragmentation of functions both among and within the different institutions. Divergent functions within these strategies are the responsibilities of the ministries, departments, authorities, and organisations working within FRG. For example, in relation to flood prevention, KenGen manages upstream dams while TARDA is responsible for managing the rubber dam, dikes, and embankments downstream.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 92
+  },
+  {
+    "id": 112,
+    "text": "ream dams while TARDA is responsible for managing the rubber dam, dikes, and embankments downstream. Therefore, KenGen can claim that floodwaters entering the Tana River catchment beyond the dams are not its responsibility, whereas TARDA only has responsibility for dikes and dams at irrigation schemes on the river, not in village settle- ments outside of irrigation schemes.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 93
+  },
+  {
+    "id": 113,
+    "text": "dams at irrigation schemes on the river, not in village settle- ments outside of irrigation schemes. In the case of rescue and relief, for instance, there is a limited number of boats staffed by authorities like TARDA, the Office of the Member of the National Assembly for Garsen Constituency, and the KRCS; among the three, only the KRCS has trained divers. Hence, if medical staff arrive for emergency rescue, they must wait for one of these boats to be available and for the KRCS to avail rescue volunteers.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 94
+  },
+  {
+    "id": 114,
+    "text": ", they must wait for one of these boats to be available and for the KRCS to avail rescue volunteers. Furthermore, pub- lic health officers can only provide information to evacuees at camps because donors directly fund NGOs. Moreover, the Ministry of Interior and Coordination of National Government coordinates funding for flood risk management, Tana River County Government, Ministry of Special Services Ministry of Interior, NDMU, and NDOC Emergency rescue and relief.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 95
+  },
+  {
+    "id": 115,
+    "text": "ment, Ministry of Special Services Ministry of Interior, NDMU, and NDOC Emergency rescue and relief. Food, shelter, and health WFP, at the request of the national government Concern Worldwide Ministry of Health Watercourse and water resource management TARDAWARMA KenGen Flood prevention and dam and dike management Emergency warning services Flood monitoring at standard measuring gauges County Government of Tana River, Water Department KRCS NEMA Nature Kenya KWS Tana River Delta Conservancy Recovery and rebuilding Coordination, monitoring, and evaluation UNICEF County Government of Tana River, Ministry of Planning FAO Economic Planning and Development NDMA Maridhiano CBO Office of the Member of the National Assembly FIGURE 2 Functional differentiation of FRM strategies in Tana River County, according to document reviews and formal interviews.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 96
+  },
+  {
+    "id": 116,
+    "text": "tiation of FRM strategies in Tana River County, according to document reviews and formal interviews. Source: author. 10 of 19 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License which is disseminated through national government line ministries.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 97
+  },
+  {
+    "id": 117,
+    "text": "plicable Creative Commons License which is disseminated through national government line ministries. This limits the funds and expertise available to the county government for FRM. Such disconnections in FRG create delays that make those who need flood protec- tion, emergency warning, rescue, and relief more vulnerable, as revealed in the subsections below on the challenges of fragmentation, FRM gaps, and resultant socio-spatial inequalities. 1.3.2 | Challenges of fragmentation and FRM gaps The formal interviews revealed that fragmentation in FRG presents challenges, as elaborated in Figure 3.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 98
+  },
+  {
+    "id": 118,
+    "text": "formal interviews revealed that fragmentation in FRG presents challenges, as elaborated in Figure 3. These con- sist of the planning- and implementation-related challenges in black boxes, the information-related challenges in grey boxes, and the actual preparedness and response consequences in light grey boxes. The challenges on the planning and implementation side of FRG directly affect data and information functions, which in turn affect the reception of FRM strategies at the local level.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 99
+  },
+  {
+    "id": 119,
+    "text": "and information functions, which in turn affect the reception of FRM strategies at the local level. The results showed that both the data and information and the planning and imple- mentation challenges owing to a fragmented FRG function affect flood preparedness and hence the flood emergency response, reinforcing and producing the FRM gaps in Table 3.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 100
+  },
+  {
+    "id": 120,
+    "text": "paredness and hence the flood emergency response, reinforcing and producing the FRM gaps in Table 3. The ramifications include poor reception of flood emergency warnings and resettlement strategies at the local (community) level, donor autonomy in terms of choice of relief and relief recipients, unavoidable loss of life and property due to a delayed response, neglected groups and sectors, and flood issues. These challenges contribute directly or indirectly to the FRM gaps in Table 3.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 101
+  },
+  {
+    "id": 121,
+    "text": "rs, and flood issues. These challenges contribute directly or indirectly to the FRM gaps in Table 3. The FRM gaps align with flood pre- paredness and flood emergency rescue and response consequences illustrated in Figure 3.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 102
+  },
+  {
+    "id": 122,
+    "text": "h flood pre- paredness and flood emergency rescue and response consequences illustrated in Figure 3. The latter shows that Poor information and data sharing Unclarified information transmission structures, between government institutions and NGOs Competing national and county government data and information sources Information gaps Delayed relay of emergency warnings Poor monitoring, coordination, and regulation Poor preparedness Poor/affected community participation Poor funding Weak devolved structures Low level of political goodwill for FRM strategy implementation Focus on statistics and not welfare Competing interests Overreliance on partners and donors, leading to donor autonomy Poor reception of warnings and resettlement programmes Poor accountability and corruption Poor response Avoidable losses owing to delayed response Neglected sectors/ groups/opportunities FIGURE 3 Data, information, planning, and implementation challenges due to fragmented FRG functions in Tana River County and their consequences for FRM strategy reception, flood preparedness, and response.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 103
+  },
+  {
+    "id": 123,
+    "text": "na River County and their consequences for FRM strategy reception, flood preparedness, and response. Note: the black outlined boxes show the challenges of fragmentation in FRG functions and the arrows show the direction of direct consequences owing to them, either creating more challenges or affecting flood preparedness and response. The dashed lines link to specific issues of poor information and data sharing challenges. Source: author.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 104
+  },
+  {
+    "id": 124,
+    "text": "ashed lines link to specific issues of poor information and data sharing challenges. Source: author. OKOKO 11 of 19 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License TABLE 3 FRM gaps in Tana River County.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 105
+  },
+  {
+    "id": 125,
+    "text": "icles are governed by the applicable Creative Commons License TABLE 3 FRM gaps in Tana River County. Flood preparedness gaps Specific limitations Specific limitations in flood emergency rescue, response, and recovery gaps Strategies for people living with disabilities (PLWDs) Funding for transportation during rescue. A lack of transportation for PLWDs. Livelihoods strategies No community safety nets. Inadequate livelihood safety nets. Poor information to farmers on appropriate flood crops. A lack of diversity in economic practices. Water and sanitation Insufficient tap water supply.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 106
+  },
+  {
+    "id": 126,
+    "text": "rops. A lack of diversity in economic practices. Water and sanitation Insufficient tap water supply. Insufficient water purifiers. Insufficient staff for medical outreach services. Flood protection Poor dike maintenance and weak dikes. Poor management of riparian zones. Riverbank protection. Loss prevention. A lack of multipurpose dams to enable irrigation. Land use Uncontrolled riverbank settlements. Inadequate land adjudication. No demarcation of the boundaries to block people from putting structures along riverbanks.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 107
+  },
+  {
+    "id": 127,
+    "text": "dication. No demarcation of the boundaries to block people from putting structures along riverbanks. Flood water resource management No floodwater harvesting and supply infrastructure. Relief food security and standardisation Poor regulation of donor items. Donors provide relief food without diversity for a balanced diet. Donors flood the relief kitty with formula milk that is inappropriate in flood emergencies because of poor water quality and access to fuel. In addition, it interferes with the promotion of breastfeeding. A lack of long-term FRM strategies No flood disaster management fund.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 108
+  },
+  {
+    "id": 128,
+    "text": "he promotion of breastfeeding. A lack of long-term FRM strategies No flood disaster management fund. Floods have become an endemic problem. No flood disaster response centre. Most of the activities are focused on immediate emergency interventions. No long-term food security strategy for flooding. Tidal FRM strategies No alternative agricultural activities. Salinisation by tidal floods during drought. A lack of a regulatory reservoir to ensure that high tide matches the level of water in the river. Recovery and rebuilding No permanent solution to settle the ever displaced.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 109
+  },
+  {
+    "id": 129,
+    "text": "l of water in the river. Recovery and rebuilding No permanent solution to settle the ever displaced. Transportation sector Poor roads. Marooned villages and schools cannot access relief aid, children cannot go to school, and the sick cannot access hospitals. 12 of 19 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 110
+  },
+  {
+    "id": 130,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License limitations in flood preparedness are similar among the factors of land use and flood protection (including in schools). Responses for livelihood strategies are like those for a lack of long-term FRM strategies; and one solution to them lies in floodwater resource management.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 111
+  },
+  {
+    "id": 131,
+    "text": "a lack of long-term FRM strategies; and one solution to them lies in floodwater resource management. Other gaps include those that hinder rescue, relief, and recovery, such as gaps in the transportation sector, water and sanitation, relief food security and standardisation, recovery and rebuild- ing, tidal FRM strategies, and capacity development, with respect to the inclusion of cultural issues and a lack of interventions in schools. All of these gaps individually and collectively reinforce existing and reproduce new socio- spatial inequalities, as presented in the subsection below.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 112
+  },
+  {
+    "id": 132,
+    "text": "nforce existing and reproduce new socio- spatial inequalities, as presented in the subsection below. 1.3.3 | Socio-spatial inequalities The results pointed to five patterns of socio-spatial inequalities, related to: age; gender; ethnicity; regionality; and disability. Age-related patterns of socio-spatial vulnerability were higher among children and the elderly. Rescue of the latter was a challenge because available rescue boats and personnel are deficient of the accommodations they require for boarding and transit.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 113
+  },
+  {
+    "id": 133,
+    "text": "escue boats and personnel are deficient of the accommodations they require for boarding and transit. Among children, current FRM strategies do not safeguard rights and access to edu- cation services. For example, lorries ferry school feeding programme food, but they cannot cross floodwaters, leaving the children who can get to school to study on an empty stomach. In addition, there was no means of safe transpor- tation from marooned villages to school, putting children at risk of drowning and wildlife attacks.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 114
+  },
+  {
+    "id": 134,
+    "text": "tation from marooned villages to school, putting children at risk of drowning and wildlife attacks. There was also no allocation to replace books, uniforms, backpacks, and other stationery swept away by floodwaters. Gender-related patterns were higher among women, especially among pregnant and lactating mothers. For instance, there were no enclosed bath areas in evacuee camps for women, who could not bathe in the open like men. Furthermore, there were no safe breastfeeding areas or special tents for expectant and nursing women.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 115
+  },
+  {
+    "id": 135,
+    "text": "urthermore, there were no safe breastfeeding areas or special tents for expectant and nursing women. More- over, while donors flooded the relief kitty with formula milk, there was no effort to provide fuel and clean water to allow safe use of the formula milk to nurse infants. There was also no priority rescue tailored to pregnant and nursing women, because of the scarcity of rescue boats. Ethnicity-related issues concerned the cultural livelihood activities of groups inhabiting the floodplains.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 116
+  },
+  {
+    "id": 136,
+    "text": "ty-related issues concerned the cultural livelihood activities of groups inhabiting the floodplains. In this case, farmers were more vulnerable because unlike pastoralists, they could not move their crops to protect them TABLE 3 (Continued) Flood preparedness gaps Specific limitations Specific limitations in flood emergency rescue, response, and recovery gaps Capacity development Insufficient medical and public health personnel. Avoidable loss of life during rescue.Insufficient training for flood rescue and response personnel. Limited medical supply reserves.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 117
+  },
+  {
+    "id": 137,
+    "text": "scue.Insufficient training for flood rescue and response personnel. Limited medical supply reserves. Inclusion of cultural issues No inclusion of cultural issues in flood emergency response planning. Poor uptake of water and sanitation interventions, such as mobile or temporary toilets. A lack of interventions in schools No flood protection for school buildings. Schoolchildren's needs during floods are not addressed, such as the need for more text and exercise books, food, and toilets. Poor schoolchildren participation in FRM strategy development.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 118
+  },
+  {
+    "id": 138,
+    "text": "nd exercise books, food, and toilets. Poor schoolchildren participation in FRM strategy development. Poor inclusion of schoolchildren's issues in FRM strategies. Source: author. OKOKO 13 of 19 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 119
+  },
+  {
+    "id": 139,
+    "text": "Online Library for rules of use; OA articles are governed by the applicable Creative Commons License from the floods, and while there are safety nets for pastoralists (through the Ministry of Agriculture and Livestock Development and the NDMA), such as insurance compensation and supplementary feeds, there are none for farming communities, except relief food. This makes it difficult for them to recover their livelihoods after floods. Region-related vulnerabilities concern the exposure of settlements to flood hazards.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 120
+  },
+  {
+    "id": 140,
+    "text": "s after floods. Region-related vulnerabilities concern the exposure of settlements to flood hazards. For example, marooned vil- lages were more vulnerable because aid could not reach them, and floodwaters submerged their farms. Also, farming communities in tidal floodplains were the victims of a neglected flood hazard: tidal flood salinisation. This means that there is no available safety net or FRM strategy for them in terms of water, food, and livelihood security, making them more vulnerable. An emerging pattern of socio-spatial vulnerability in t his paper was disability-related.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 121
+  },
+  {
+    "id": 141,
+    "text": "ulnerable. An emerging pattern of socio-spatial vulnerability in t his paper was disability-related. First there is poor representation of people living with disabilities and hum an immunodeficiency virus/acquired immunodeficiency syndrome (HIV/AIDS) in FRG. This cascades towards unaddr essed issues in rescue and response. First, there is no rescue manual for people with different disabilities during floods and no disability-enabled rescue boats.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 122
+  },
+  {
+    "id": 142,
+    "text": "manual for people with different disabilities during floods and no disability-enabled rescue boats. Second, there is no priority rescue for those with disabil ities and serious mobility challenges, such as those in wheelchairs, on crutches, and the visually impaired. Third, there are no strategies to immediately replace devices swept away by floods, such as hearing aids. Fourth , there are no rescuers specifically trained to assess the issues of people living with disabilities. Fifth, the eva cuee camps, including the mobile toilets, are inaccessi- ble by evacuees with disabilities.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 123
+  },
+  {
+    "id": 143,
+    "text": "the eva cuee camps, including the mobile toilets, are inaccessi- ble by evacuees with disabilities. The results reveal that spatial inequalities reproduced a link to ignored groups and sectors in the FRM strategies implemented within the fragmented systems, while the produced inequalities establish a link to the FRM gaps resulting from the presence of a fragmented system.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 124
+  },
+  {
+    "id": 144,
+    "text": "ed inequalities establish a link to the FRM gaps resulting from the presence of a fragmented system. For example, poor preparedness puts age- and gender- differentiated populations such as children, the elderly, and expectant and lactating women at more risk because they require more resources to evacuate and settle in evacuee camps. Even those sheltering in place still require more assistance, to gain access to schools, healthcare facilities, and nutritional services.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 125
+  },
+  {
+    "id": 145,
+    "text": "require more assistance, to gain access to schools, healthcare facilities, and nutritional services. Poor monitoring of flood emergency preparedness, response, recovery, and rebuilding links to poor learning and assessment of gaps that dif- ferentiate people by age, gender, culture, and region, making them more vulnerable to losses and suffering, and even death, in future flood emergencies.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 126
+  },
+  {
+    "id": 146,
+    "text": "n, making them more vulnerable to losses and suffering, and even death, in future flood emergencies. This in turn makes addressing emergencies more expensive with every flood event because the fragmented system is unable to produce long-term solutions and retains a focus on relief and res- cue, which then become increasingly expensive.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 127
+  },
+  {
+    "id": 147,
+    "text": "term solutions and retains a focus on relief and res- cue, which then become increasingly expensive. This creates a spiral of overlooking inequalities, not learning and sharing information, repeating the same mistakes, having funding deficiencies, reproducing existing differences (vul- nerabilities and inequalities), and producing new forms of differences, trapping floodplain residents in a never-ending vulnerability web. 2 | DISCUSSION Not all diversified FRG results in detrimental fragmentation, though, especially where it is intentional, and policy-led, as in cases in Europe.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 128
+  },
+  {
+    "id": 148,
+    "text": "al fragmentation, though, especially where it is intentional, and policy-led, as in cases in Europe. In such instances, a policy provides the template for amendment and clear, coordinated institu- tions within which rectification of competency and responsibilitisation issues is possible. This case study, however, presents one of the least studied scenarios of unintended or unplanned fragmentation in FRG functions, especially in Sub-Saharan Africa. Leck et al.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 129
+  },
+  {
+    "id": 149,
+    "text": "nintended or unplanned fragmentation in FRG functions, especially in Sub-Saharan Africa. Leck et al. ( 2018) deduced that in Sub-Saharan Africa, fragmented governance, donor priorities, and inadequate monitoring of hazards, impacts, and vulnerability constrain effective FRM. In this study, unintended fragmented governance is the nexus of inadequate monitoring of hazards, impacts, and vulnerability.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 130
+  },
+  {
+    "id": 150,
+    "text": "fragmented governance is the nexus of inadequate monitoring of hazards, impacts, and vulnerability. This cascades into poor planning, financing, and allocation and coordination of competencies and responsibilities, affecting flood emergency response in terms of delays, avoidable losses, and donor autonomy. The processes of FRG decision-making and cooperation in the results reveal that while the role of diversified government policies and agencies is to manage floods, they could produce fragmented responsibility without clear coordination, which features entrenched bureaucracy and competition.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 131
+  },
+  {
+    "id": 151,
+    "text": "ed responsibility without clear coordination, which features entrenched bureaucracy and competition. This is similar to observations made on 14 of 19 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License fragmented FRG in Africa by Adekola et al.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 132
+  },
+  {
+    "id": 152,
+    "text": "s are governed by the applicable Creative Commons License fragmented FRG in Africa by Adekola et al. ( 2020) in Calabar, Nigeria, and Okunola and Simatele ( 2022) and Okunola et al. ( 2022) in southern Nigeria and South Africa. A further exacerbating factor in FRG processes established in this study could be the presence of too many actors with competing interests.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 133
+  },
+  {
+    "id": 153,
+    "text": "ocesses established in this study could be the presence of too many actors with competing interests. For instance, in the case of Tana River County, there are two levels of government, county and national, TARDA and KenGen govern the Tana River watercourse, and the NGOs and CBOs based in Tana River County are responsible for drought and flood response, conflict management, and livelihoods empower- ment, all factors related to flooding in the area.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 134
+  },
+  {
+    "id": 154,
+    "text": "se, conflict management, and livelihoods empower- ment, all factors related to flooding in the area. In addition, fragmented policy development processes could produce conflicting policy actions, such as the food security policy action for Tana River County, with its arid and semi-arid land, which encourages settlement and cultivation on riverbanks. This heightens risk in times of flooding by increas- ing the exposure of such settlers, reinforcing the region/location differentiated socio-spatial patterns of vulnerability.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 135
+  },
+  {
+    "id": 155,
+    "text": "ch settlers, reinforcing the region/location differentiated socio-spatial patterns of vulnerability. Moreover, a lack of a specific national or regional FRM policy that specifies SOPs and incidence management guide- lines could make the FRG actors autonomous and unaccountable. This produces data sharing, financing, staffing, community participation, and cultural incorporation deficiencies in FRG functions and decision-making processes, which undermine FRM strategies, especially in emergency response.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 136
+  },
+  {
+    "id": 156,
+    "text": "ons and decision-making processes, which undermine FRM strategies, especially in emergency response. Consequently, the challenges of fragmentation and the resultant FRM gaps keep reproducing and producing socially differentiated socio-spatial inequalities and vulnerabilities among floodplain residents in Tana River County. These inequalities align with Lee and Juteau's (2003) patterns of social differentiation because they are either related to age, gender, ethnicity, culture, and regionality.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 137
+  },
+  {
+    "id": 157,
+    "text": "differentiation because they are either related to age, gender, ethnicity, culture, and regionality. Addressing age- and gender-related patterns of vulnerability among women in FRG is important because in Afri- can countries most women lack access to land, livestock, and financial capital, which are critical in reducing vulnera- bilities to disasters (Chineka et al., 2019). A study in Dhaka, Bangladesh, pointed out that women, infants, and young children are the groups most vulnerable to flood impacts, both during the flood emergency and in its aftermath (Goudet, 2010; Goudet et al., 2023).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 138
+  },
+  {
+    "id": 158,
+    "text": "d impacts, both during the flood emergency and in its aftermath (Goudet, 2010; Goudet et al., 2023). In Tana River County, the differentiation is not just between but also within groups. Among women there are women-headed households, expectant women, lactating women, and women living with disabilities and/or HIV/AIDS. Among children, the differentiation is between infants and school-going children, each vulnerable for varied reasons. In addition, recent studies show that elderly people are among the groups most vulnerable to the negative impacts of disasters (Bayraktar et al., 2018).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 139
+  },
+  {
+    "id": 159,
+    "text": "are among the groups most vulnerable to the negative impacts of disasters (Bayraktar et al., 2018). Another study concluded that the psychologi- cal and physiological health effects of floods appear to be borne disproportionately by females, the elderly, and chil- dren during floods (Lowe, Ebi, and Forsberg, 2013). Therefore, generalisation of relief aid, as well as a lack of post- flood strategies, increases the impact of floods on these groups and their vulnerability, which at times could mean loss of life.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 140
+  },
+  {
+    "id": 160,
+    "text": "he impact of floods on these groups and their vulnerability, which at times could mean loss of life. This study deduces that ethnicity and spatial-related differences in vulnerability interconnect because of the cul- ture of people, where they live, and their livelihood activity not being separate. This pattern of differentiation intri- cately links to loss of property, interruption of livelihoods, poor access to roads and markets, and poverty.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 141
+  },
+  {
+    "id": 161,
+    "text": "nks to loss of property, interruption of livelihoods, poor access to roads and markets, and poverty. From the study results in Table 3, one can deduce that FRG decisions in Tana River County do not give enough emphasis to the culture and traditions of the residents of the Tana River floodplains. Thus, at the community level, there is resis- tance to FRM strategies such as resettlement plans.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 142
+  },
+  {
+    "id": 162,
+    "text": "s. Thus, at the community level, there is resis- tance to FRM strategies such as resettlement plans. In addition, the fragmentation challenge of poor information sharing has led to distrust of warnings among floodplain residents; most people choose to shelter in place until they can see the floodwater rising. This is a clear illustration of the disconnect between experts and laymen, as pointed out by Clausen ( 1992).",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 143
+  },
+  {
+    "id": 163,
+    "text": "clear illustration of the disconnect between experts and laymen, as pointed out by Clausen ( 1992). Disability-related differentiation, meanwhile, stems from a lack of representation in FRG decisions and functions and a lack of rescue guidelines and relief aid tailored to people with disabilities. These issues are unaddressed because no actor in the FRG system in Tana River County is specifically responsible for people living with disabilities in floodplains.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 144
+  },
+  {
+    "id": 164,
+    "text": "in Tana River County is specifically responsible for people living with disabilities in floodplains. The differentiation also has other differentiations within it, based on the type and severity of the dis- ability: more vulnerable groups of children with disabilities, expectant and lactating women with disabilities, and elderly people with disabilities. OKOKO 15 of 19 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 145
+  },
+  {
+    "id": 165,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 146
+  },
+  {
+    "id": 166,
+    "text": "Online Library for rules of use; OA articles are governed by the applicable Creative Commons License This study recommends implementation of the current NDMP because it sets out to address the challenges of fragmentation in FRG functions, the resultant FRM gaps, and the produced and reproduced socio-spatial inequalities and vulnerabilities; and it should have an amendment to accommodate a devolved system of governance.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 147
+  },
+  {
+    "id": 167,
+    "text": "and vulnerabilities; and it should have an amendment to accommodate a devolved system of governance. This would ensure that integration or diversification of FRG functions is intentional, and policy-led, and therefore it is easy to configure exact points of fragmentation in FRG functions, institutional challenges, and implementation gaps and address them effectively. Implementation of the NDMP should include the development and enactment of the National Disaster Management Act, which is not yet in place, and a clear implementation framework for disaster management in Kenya.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 148
+  },
+  {
+    "id": 168,
+    "text": "t, which is not yet in place, and a clear implementation framework for disaster management in Kenya. The framework should comprise specific disaster management policies for each disaster, simi- lar to the ASAL Policy, the inclusion of these policies in the country's development agenda, Vision 2030, to ensure financing, the creation of relevant institutions, and staffing and equipping of these institutions with competencies and capacity to monitor and reduce risk, and prepare for, respond to, and recover from specific disasters in their realm.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 149
+  },
+  {
+    "id": 169,
+    "text": "or and reduce risk, and prepare for, respond to, and recover from specific disasters in their realm. These institutions should establish a way to coordinate with county and regional authorities and other actors on FRG at local levels, including floodplain residents, through information sharing, the deployment of staff and equip- ment, and planning, monitoring, and evaluation, to prevent the FRM gaps that materialised in this study.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 150
+  },
+  {
+    "id": 170,
+    "text": ", and planning, monitoring, and evaluation, to prevent the FRM gaps that materialised in this study. To tackle the socio-spatial differences established here, the study recommends that FRM policies include a clause that ensures representation of these groups in institutions and in FRG decision-making processes, especially for emergency response. The exacerbation of the socio-spatial vulnerabilities in this study, especially those related to age and gender, could just be a beginning.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 151
+  },
+  {
+    "id": 171,
+    "text": "ulnerabilities in this study, especially those related to age and gender, could just be a beginning. Involving these groups will enable them to present and address all of their needs pertaining to flood response and recovery and avoid overlooking them, as in the current fragmented FRG sys- tem and functions. In addition, since most socio-spatial differences in vulnerability increase because the FRG system overlooks interventions in the aftermath of floods, there is need for a clear flood recovery strategy, with relevant financing, rebuilding, oversight, and public participation.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 152
+  },
+  {
+    "id": 172,
+    "text": "r flood recovery strategy, with relevant financing, rebuilding, oversight, and public participation. This study also recommends the establishment of permanent rescue centres in the floodplains, equipped with necessities for all groups, as well as wheelchair access and child-friendly boats and rescue vehicles. In the event of a flood, floodplain residents, especially those in marooned and hard-to-reach areas, can then shelter in place without worrying about provisions. It also recommends protection dikes in the floodplains as well as raised permanent hous- ing, where practical and possible.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 153
+  },
+  {
+    "id": 173,
+    "text": "ection dikes in the floodplains as well as raised permanent hous- ing, where practical and possible. Governance actors could also empower and enable local communities to plant trees along riverbanks, as well as flood crops as buffers and for food security. At governance levels, there is a need for oversight of private actors, such as KenGen in Kenya, which manages and uses the river catchment and claims to prevent floods to ensure that its actions are as flood control-based as they are profit-based.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 154
+  },
+  {
+    "id": 174,
+    "text": "ms to prevent floods to ensure that its actions are as flood control-based as they are profit-based. The same oversight should apply to donor agencies and NGOs to ensure that their actions do not aggravate socio-spatial vulnerabilities. Also of benefit would be a clear emergency warning system that is timely and accurate regardless of which FRG actor relays information to the public, to foster trust in FRG institutions and the adoption of FRM strategies by flood- plain populations.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 155
+  },
+  {
+    "id": 175,
+    "text": "to foster trust in FRG institutions and the adoption of FRM strategies by flood- plain populations. 3 | CONCLUSION This study set out to answer the following research question: ‘What are the consequential socio-spatial vulnerabil- ities of fragmentation in FRG functions in Tana River County, Kenya? ’. The literature from Europe revealed that extensive scholarship exists on fragmentation of FRG functions as part of intended diversification of FRG and limited studies exist on unintended diversification of FRG, which this paper addresses.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 156
+  },
+  {
+    "id": 176,
+    "text": "n of FRG and limited studies exist on unintended diversification of FRG, which this paper addresses. The scenario of unintended fragmen- tation of FRG functions in the study area, Tana River County, exists because of the delayed implementation of the existing NDMP. This policy set out to tackle the challenges of fragmented FRG functions, such as funding, monitor- ing, accountability, competing interests, data and information sharing, politics, preparedness, avoidable losses of life, and donor issues. This study revealed a link between these challenges and FRM gaps.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 157
+  },
+  {
+    "id": 177,
+    "text": "losses of life, and donor issues. This study revealed a link between these challenges and FRM gaps. The latter pointed to FRG actors overlooking socio-spatial inequalities, a process that facilitated their reproduction or the production of new 16 of 19 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 158
+  },
+  {
+    "id": 178,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License inequalities. Patterns that differentiate the inequalities are related to age, gender, ethnicity/culture, regionality/ location and/or disability. The recommendations of this study include process- and pattern-oriented points.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 159
+  },
+  {
+    "id": 179,
+    "text": "n and/or disability. The recommendations of this study include process- and pattern-oriented points. In the decision-making pro- cesses of FRG, it is vital to implement the NDMP and to enact the relevant act of parliament to guide its institutionalisation. It is also important to create disaster-specific policies, aligned institutions, implementation frame- works, and funding and monitoring mechanisms. Another key step is to empower and enable the participation of socio-spatially vulnerable groups in FRG decision-making processes and oversee private and non-governmental actors.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 160
+  },
+  {
+    "id": 180,
+    "text": "vulnerable groups in FRG decision-making processes and oversee private and non-governmental actors. Since this is only one case of unintended diversification of FRG leading to unintended fragmentation of FRG functions, this study also recommends conducting more studies of this kind, especially in Sub-Saharan Africa. ETHICS STATEMENT This paper reports analysis of primary data. The ethics of data collection and analysis were approved by the Norwegian Centre for Research Data and the National Co mmission for Science, Technology, and Innovation, Kenya.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 161
+  },
+  {
+    "id": 181,
+    "text": "entre for Research Data and the National Co mmission for Science, Technology, and Innovation, Kenya. Persons from whom data were collected gave thei r free, prior, and informed consent for the collection and analysis of information. Their data have been kept confidential and used anonymously to protect their identity. FUNDING STATEMENT This is an academic study funded by the Norwegian University of Life Sciences. DATA AVAILABILITY STATEMENT The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 162
+  },
+  {
+    "id": 182,
+    "text": "port the findings of this study are available from the corresponding author upon reasonable request. ORCID Anita Nyapala Okoko https://orcid.org/0000-0001-9783-7242 ENDNOTE 1 For more information, see https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030 (last accessed on 29 April 2024). REFERENCES Adekola, O., J. Lamond, I. Adelekan, and E.B. Eze (2020) ‘Evaluating flood adaptation governance in the city of Calabar, Nigeria’. Climate and Development. 12 (9). pp. 840 –853. Albert, M. (2016) A Theory of World Politics.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 163
+  },
+  {
+    "id": 183,
+    "text": "geria’. Climate and Development. 12 (9). pp. 840 –853. Albert, M. (2016) A Theory of World Politics. Cambridge Studies in International Relations Book 141 . Cambridge University Press, Cambridge. Alexander, J.C. and P.B. Colomy (1990) Differentiation Theory: Problems and Prospects . Columbia University Press, New York, NY. Alexander, M., N. Doorn, and S. Priest (2018) ‘Bridging the legitimacy gap — translating theory into practical signposts for legitimate flood risk governance ’. Regional Environmental Change. 18 (2). pp. 397 –408. Babbie, E. (2008) The Basics of Social Research .",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 164
+  },
+  {
+    "id": 184,
+    "text": "gional Environmental Change. 18 (2). pp. 397 –408. Babbie, E. (2008) The Basics of Social Research . Fourth edition. Thomson/Wadsworth, Belmont, CA. Bayraktar, N. and Ü. Dal Yilmaz (2018) ‘Vulnerability of elderly people in disasters: a systematic review ’. Turkish Journal of Geriatrics. 21(3). pp. 467 –482. Bouwer, H. (2002) ‘Integrated water management for the 21st century: problems and solutions ’. Journal of Irrigation and Drainage Engineering. 128 (4). pp. 193 –202. Broekhans, B. and A. Correljé (2008) ‘Flood management in the low lands: from probability to risk ’.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 165
+  },
+  {
+    "id": 185,
+    "text": "Broekhans, B. and A. Correljé (2008) ‘Flood management in the low lands: from probability to risk ’. WIT Transactions on Ecol- ogy and the Environment. 118 (June). pp. 69 –79. Chineka, J., A. Musyoki, E. Kori, and H. Chikoore (2019) ‘Gender mainstreaming: a lasting solution to disaster risk reduction ’. Jàmbá: Journal of Disaster Risk Studies . 11(3). Article number: a723. https://doi.org/10.4102/jamba.v11i3.723. OKOKO 17 of 19 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 166
+  },
+  {
+    "id": 186,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Clausen, L. (1992) ‘Social differentiation and the long-term origin of disasters ’. Natural Hazards. 6 (2). pp. 181 –190. Coulibaly, J.Y. et al. (2015) ‘Mapping vulnerability to climate change in Malawi: spatial and social differentiation in the Shire River Basin’. American Journal of Climate Change.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 167
+  },
+  {
+    "id": 187,
+    "text": "i: spatial and social differentiation in the Shire River Basin’. American Journal of Climate Change. 4 (3). pp. 282 –294. De Bruijn, K.M. and F. Klijn (2001) ‘Resilient flood risk management strategies ’. In L. Guifen and L. Wenxue (eds.) Proceed- ings of the International Association for Hydraulic Research Congress, 16 –21 September, Beijing, China . Tsinghua University Press, Beijing. pp. 450 –457. Durkheim, E. (1893) The Division of Labor in Society . Macmillan, London. Forino, G., S. Bonati, and L.M. Calandra (2018) Governance of Risk, Hazards and Disasters: Trends in Theory and Practice .",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 168
+  },
+  {
+    "id": 188,
+    "text": "and L.M. Calandra (2018) Governance of Risk, Hazards and Disasters: Trends in Theory and Practice . Routledge, London. Franke, R.W. (2004) ‘Catastrophe and culture: the anthropology of disaster ’. American Anthropologist. 106 (4). pp. 765 –766. Geeraert, N. et al. (2015) ‘Sediment yield of the lower Tana River, Kenya, is insensitive to dam construction: sediment mobi- lization processes in a semi-arid tropical river system ’. Earth Surface Processes and Landforms. 40 (13). pp. 1827 –1838. Gilissen, H.K. et al.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 169
+  },
+  {
+    "id": 189,
+    "text": "iver system ’. Earth Surface Processes and Landforms. 40 (13). pp. 1827 –1838. Gilissen, H.K. et al. (2016) ‘Bridges over troubled waters: an interdisciplinary framework for evaluating the interconnected- ness within fragmented domestic flood risk management systems ’. Journal of Water Law. 25 (1). pp. 12 –26. Gitau, P., S. Duvail, D. Verschuren, and D. Guillaud (2021) Geomophological and Vulnerability Analysis of a Coastal Delta Under Increased Hydrological Alteration Over the Past Two Centuries: Tana River Delta, Kenya, East Africa .",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 170
+  },
+  {
+    "id": 190,
+    "text": "ncreased Hydrological Alteration Over the Past Two Centuries: Tana River Delta, Kenya, East Africa . Paper presented to the European Geosciences Union's General Assembly 2021 (online), 19 –30 April 2021. EGU21-15404. https://doi.org/10. 5194/egusphere-egu21-15404. Goudet, J-M., F.B. Arif, H. Owais, H.U. Ahmed, and V. Ridde (2023) ‘Intersecting Vulnerabilities: Unraveling the Complex Relationship between Women, Climate Change, and Mental Health in Bangladeshi Communities. medRxiv website. Pre- print. Posted on 10 June 2023.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 171
+  },
+  {
+    "id": 191,
+    "text": ", and Mental Health in Bangladeshi Communities. medRxiv website. Pre- print. Posted on 10 June 2023. https://www.medrxiv.org/content/10.1101/2023.06.06.23290721v1 (last accessed on 20 June 2024). Goudet, S. (2010) Infant and Young Children's Nutritional Health and Feeding Practices in Relation to Flooding in Bangladesh . Doctoral thesis submitted in partial fulfilment of the requirements for the award of Doctor of Philosophy of Loughbor- ough University. 31 July.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 172
+  },
+  {
+    "id": 192,
+    "text": "ent of the requirements for the award of Doctor of Philosophy of Loughbor- ough University. 31 July. https://repository.lboro.ac.uk/articles/thesis/Infant_and_young_children_s_nutritional_health_ and_feeding_practices_in_relation_to_flooding_in_Bangladesh/9609404/2 (last accessed on 20 June 2024). Government of Kenya (2009) National Policy for Disaster Management in Kenya . March. Ministry of State for Special Programmes, Office of the President, Nairobi. Government of Kenya (2021) Kenya Gazette Supplement: Acts 2021 . 30 June. Government Printer, Nairobi.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 173
+  },
+  {
+    "id": 193,
+    "text": "vernment of Kenya (2021) Kenya Gazette Supplement: Acts 2021 . 30 June. Government Printer, Nairobi. Government of Kenya (2024) ‘National Disaster Management Unit ’. Website. https://disastermanagement.go.ke/ (last accessed on 30 April 2024). Gralepois, M. (2020) ‘What can we learn from planning instruments in flood prevention? Comparative illustration to high- light the challenges of governance in Europe ’. Water. 12(6). Article number: 1841. https://doi.org/10.3390/ w12061841. Greenhill, B. and Y. Lupu (2017) ‘Clubs of clubs: fragmentation in the network of intergovernmental organizations ’.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 174
+  },
+  {
+    "id": 194,
+    "text": "d Y. Lupu (2017) ‘Clubs of clubs: fragmentation in the network of intergovernmental organizations ’. Interna- tional Studies Quarterly. 61 (1). pp. 181 –195. Hegger, D.L. et al. (2013) Flood Risk Management in Europe: Similarities and Differences Between the STAR-FLOOD Consortium Countries. January. https://www.researchgate.net/publication/260477744_Flood_risk_management_in_Europe_ similarities_and_differences_between_the_STAR-FLOOD_consortium_countries (last accessed on 30 April 2024). Hegger, D.L. et al. (2014) ‘Assessing stability and dynamics in flood risk governance ’.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 175
+  },
+  {
+    "id": 195,
+    "text": "pril 2024). Hegger, D.L. et al. (2014) ‘Assessing stability and dynamics in flood risk governance ’. Water Resources Management. 28 (12). pp. 4127–4142. Houston, D., A. Werritty, T. Ball, and A. Black (2021) ‘Environmental vulnerability and resilience: social differentiation in short- and long-term flood impacts ’. Transactions of the Institute of British Geographers. 46 (1). pp. 102 –119. Imeson, A. (2012) Desertification, Land Degradation and Sustainability : John Wiley & Sons, Chichester. Jonkman, S.N. (2005) ‘Global perspectives on loss of human life caused by floods ’. Natural Hazards.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 176
+  },
+  {
+    "id": 196,
+    "text": "Jonkman, S.N. (2005) ‘Global perspectives on loss of human life caused by floods ’. Natural Hazards. 34 (2). pp. 151 –175. Kairu, K.K. (1997) ‘Vulnerability of the Kenyan shoreline to coastal instability ’. In UNESCO (United Nations Educational, Scientific and Cultural Organization) Office Nairobi and Regional Bureau for Science in Africa (eds.) UNESCO-Kenya National Seminar on Sustainable Coastal Development Through Integrated Planning and Management Focused on Mitigating the Impacts of Coastline Instability. Summary Report. UNESCO , Regional Office in Nairobi, Nairobi. pp. 13 –25.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 177
+  },
+  {
+    "id": 197,
+    "text": "of Coastline Instability. Summary Report. UNESCO , Regional Office in Nairobi, Nairobi. pp. 13 –25. Leauthaud, C. et al. (2013) ‘Floods and livelihoods: the impact of changing water resources on wetland agro-ecological pro- duction systems in the Tana River Delta, Kenya ’. Global Environmental Change. 23 (1). pp. 252 –263. Leauthaud, C. et al. (2017) Interactions Between the Flooding Regime and Floodplain Grasslands in the Tana River Delta, in Kenya . Paper presented at the European Geosciences Union's General Assembly 2017, 23 –28 April 2017. EGU2017-12143. https://ui.adsabs.harvard.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 178
+  },
+  {
+    "id": 198,
+    "text": "sciences Union's General Assembly 2017, 23 –28 April 2017. EGU2017-12143. https://ui.adsabs.harvard. edu/abs/2017EGUGA..1912143L (last accessed on 30 April 2024). Leck, H. et al. (2018) ‘Towards risk-sensitive and transformative urban development in Sub Saharan Africa ’. Sustainability. 10(8). Article number: 2645. https://doi.org/10.3390/su10082645. 18 of 19 OKOKO 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026].",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 179
+  },
+  {
+    "id": 199,
+    "text": "brary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Lee, D.J. and D. Juteau (2003) Social Differentiation: Patterns and Processes : University of Toronto Press, Toronto, ON. Lowe, D., K.L. Ebi, and B. Forsberg (2013) ‘Factors increasing vulnerability to health effects before, during and after floods ’.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 180
+  },
+  {
+    "id": 200,
+    "text": "rsberg (2013) ‘Factors increasing vulnerability to health effects before, during and after floods ’. International Journal of Environmental Research and Public Health. 10 (12). pp. 7015 –7067. Luhmann, N. (1982) The Differentiation of Society . Columbia University Press, New York, NY. Luhmann, N. (1995) Social Systems. Stanford University Press, Redwood City, CA. Meijerink, S. and W. Dicke (2008) ‘Shifts in the public –private divide in flood management ’. International Journal of Water Resources Development. 24 (4) pp. 499 –512. Montz, B.E., G.A. Tobin, and R.R.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 181
+  },
+  {
+    "id": 201,
+    "text": "ional Journal of Water Resources Development. 24 (4) pp. 499 –512. Montz, B.E., G.A. Tobin, and R.R. Hagelman, III (2017) Natural Hazards: Explanation and Integration : Guilford Press, New York, NY. Nygren, A. (2016) ‘Socially differentiated urban flood governance in Mexico: ambiguous negotiations and fragmented con- testations’. Journal of Latin American Studies. 48 (2). pp. 335 –365. Okoko, A.N. (2022a) ‘Becoming flood insecure: lessons from village level experiences in Tana Delta, Kenya ’. Progress in Disaster Science. 16 (December). Article number: 100265.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 182
+  },
+  {
+    "id": 202,
+    "text": "riences in Tana Delta, Kenya ’. Progress in Disaster Science. 16 (December). Article number: 100265. https://doi.org/10.1016/j.pdisas.2022.100265. Okoko, A.N. (2022b) ‘The legacy of vulnerability to floods in the Tana River, Kenya ’. International Journal of Disaster Risk Reduction. 71 (March). Article number: 102833. https://doi.org/10.1016/j.ijdrr.2022.102833. Okunola, O.H. and M.D Simatele (2022) ‘Configurations of approaches for flood risk management in southern Nigeria: les- sons for best practices ’. SSRN Electronic Journal . January. Article number: 4092929.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 183
+  },
+  {
+    "id": 203,
+    "text": "Nigeria: les- sons for best practices ’. SSRN Electronic Journal . January. Article number: 4092929. https://doi.org/10.2139/ssrn. 4092929. Okunola, O.H. et al. (2022) ‘Quantifying socio-economic and environmental impacts of flood risk and management strate- gies in coastal cities of Africa: a study of Nigeria and South Africa ’. SSRN Electronic Journal . January. Article number: 4193705. https://doi.org/10.2139/ssrn.4193705. Oosterberg, W., C. Van Drimmelen, and M. Van der Vlist (2005) Strategies to Harmonize Urbanization and Flood Risk Manage- ment in Deltas .",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 184
+  },
+  {
+    "id": 204,
+    "text": "M. Van der Vlist (2005) Strategies to Harmonize Urbanization and Flood Risk Manage- ment in Deltas . Paper presented at the 45th Congress of the European Regional Science Association, ‘Land Use and Water Management in a Sustainable Network Society ’,2 3 –27 August 2005, Amsterdam, The Netherlands. https:// www.econstor.eu/handle/10419/117480 (last accessed on 30 April 2024). Opere, A. (2013) ‘Floods in Kenya ’. In P. Paron, D. Ochieng Olago, and C. Thine Omuto (eds.) Kenya: A Natural Outlook: Methods and Applications . Developments in Earth Surface Processes Vol. 16. Elsevier, Amsterdam. pp.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 185
+  },
+  {
+    "id": 205,
+    "text": "Methods and Applications . Developments in Earth Surface Processes Vol. 16. Elsevier, Amsterdam. pp. 315 –330. Parsons, T. (1985) Talcott Parsons on Institutions and Social Evolution: Selected Writings . University of Chicago Press, Chi- cago, IL. Ritchie, D.A. (2015) Doing Oral History . Oxford University Press, Oxford. Shampa, S. et al. (2021) ‘Evaluating future threats of climate change on riverine and coastal chars ’. In M. Zaman and M. Alam (eds.) Living on the Edge . Springer, Cham. pp. 185 –211. Sorell, T.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 186
+  },
+  {
+    "id": 206,
+    "text": "hars ’. In M. Zaman and M. Alam (eds.) Living on the Edge . Springer, Cham. pp. 185 –211. Sorell, T. (2013) Emergencies and Politics: A Sober Hobbesian Approach : Cambridge University Press, Cambridge. Spencer, H. (1887) The Factors of Organic Evolution . D. Appleton and Company, New York, NY. Terer, T., G.G. Ndiritu, and N.N. Gichuki (2004) ‘Socio-economic values and traditional strategies of managing wetland resources in lower Tana River, Kenya ’. Hydrobiologia. 527(1). pp. 3 –15. Tompkins, E.L. and W.N.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 187
+  },
+  {
+    "id": 207,
+    "text": "nd resources in lower Tana River, Kenya ’. Hydrobiologia. 527(1). pp. 3 –15. Tompkins, E.L. and W.N. Adger (2004) ‘Does adaptive management of natural resources enhance resilience to climate change?’. Ecology and Society. 9(2). Article number: 10. http://www.ecologyandsociety.org/vol9/iss2/art10/. van Popering-Verkerk, J. and A. van Buuren (2017) ‘Developing collaborative capacity in pilot projects: lessons from three Dutch flood risk management experiments ’. Journal of Cleaner Production. 169 (December). pp. 225 –233. Wairimu Ng'ang'a, T. and T.A.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 188
+  },
+  {
+    "id": 208,
+    "text": "iments ’. Journal of Cleaner Production. 169 (December). pp. 225 –233. Wairimu Ng'ang'a, T. and T.A. Crane (2020) ‘Social differentiation in climate change adaptation: one community, multiple pathways in transitioning Kenyan pastoralism ’. Environmental Science & Policy. 114 (December). pp. 478 –485. Wisner, B., P. Blaikie, T. Cannon, and I. Davis (2014) At Risk: Natural Hazards , People's Vulnerability and Disasters. Routledge, London. Zenebe, M.G., L. Fleskens, C. Ritsema, and F.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 189
+  },
+  {
+    "id": 209,
+    "text": "ople's Vulnerability and Disasters. Routledge, London. Zenebe, M.G., L. Fleskens, C. Ritsema, and F. van Steenbergen (2022) ‘Enhancing traditional floodwater governance for inclusive and resilient flood-based livelihood systems in Tana River floodplains, Kenya ’. Journal of Environmental Planning and Management. 65 (4). pp. 612 –629. How to cite this article: Okoko, A. N. (2024). Diversified flood governance and related socio-spatial vulnerability in Tana River County, Kenya. Disasters, 48(4), e12648.",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 190
+  },
+  {
+    "id": 210,
+    "text": "nance and related socio-spatial vulnerability in Tana River County, Kenya. Disasters, 48(4), e12648. https://doi.org/10.1111/disa.12648 OKOKO 19 of 19 14677717, 2024, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/disa.12648 by EBMG ACCESS - KENYA, Wiley Online Library on [19/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+    "source": "Disasters - 2024 - Okoko - Diversified flood governance and related socio‐spatial vulnerability in Tana River County  Kenya.pdf",
+    "chunk": 191
+  },
+  {
+    "id": 211,
+    "text": "NATIONAL DROUGHT MANAGEMENT AUTHORITY National Drought Early Warning Bulletin February 2026 1 1.0 DROUGHT SITUATION OVERVIEW Drought conditions largely stabilized across most ASAL counties following the off-season rainfall received in February, which temporarily eased environmental stress and slowed the deterioration of key drought indicators. Despite these short - term improvements, hot and dry conditions persisted in several areas, sustaining drought risk and slowing full recovery of livelihoods.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 0
+  },
+  {
+    "id": 212,
+    "text": "itions persisted in several areas, sustaining drought risk and slowing full recovery of livelihoods. As a result, Mandera, Kilifi, Kwale, and Wajir remained in the Alarm phase, signaling heightened drought stress and the need for sustained response measures. A further thirteen counties—Samburu, Baringo, Marsabit, Kitui, Taita Taveta, Kajiado, West Pokot, Garissa, Isiolo, Tana River, Turkana, Lamu, and Tharaka Nithi —were classified in the Alert phase, indicating emerging drought pressure and close monitoring requirements.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 1
+  },
+  {
+    "id": 213,
+    "text": "assified in the Alert phase, indicating emerging drought pressure and close monitoring requirements. Laikipia and Narok were in the Pre -Alert phase, while Makueni, Nyeri, Embu, and Meru maintained Normal drought status. These phase classifications were informed by deviations in key environmental, production, access, and utilization indicators from their normal seasonal thresholds. Meanwhile, acute malnutrition remained a critical concern, driven by persistent food insecurity, high morbidity levels, and sub -optimal child care practices.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 2
+  },
+  {
+    "id": 214,
+    "text": "driven by persistent food insecurity, high morbidity levels, and sub -optimal child care practices. The burden was most pronounced in Mandera, Garissa, Marsabit, Samburu, Baringo (Tiaty), and Turkan a, which recorded the highest proportions of food-insecure populations. Overall, an estimated 810,900 children under five years and 116,800 pregnant and breastfeeding women are currently acutely malnourished and in urgent need of treatment and nutrition support interventions. Figure 1: February 2026 Drought Phase Classification 2 2.0.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 3
+  },
+  {
+    "id": 215,
+    "text": "ent and nutrition support interventions. Figure 1: February 2026 Drought Phase Classification 2 2.0. Observed Drought Indicators 2.1.1 February 2026 Rainfall Performance Rainfall performance across the ASAL counties in February 2026 showed a slight improvement compared to January, though the spatial and temporal distribution remained uneven and largely inadequate to significantly ease prevailing drought stress. Most areas received light to mo derate rainfall, providing only short-term moisture gains and limited recovery of rangeland resources.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 4
+  },
+  {
+    "id": 216,
+    "text": "rate rainfall, providing only short-term moisture gains and limited recovery of rangeland resources. In the Pastoral N orth West cluster (Turkana, and Samburu) and parts of West Pokot , rainfall was largely light (1–20 mm), particularly across northern Turkana. However, southern Turkana and sections of West Pokot and Samburu recorded light to moderate rainfall (21 –50 mm), signaling localized improvements in moisture conditions.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 5
+  },
+  {
+    "id": 217,
+    "text": "ded light to moderate rainfall (21 –50 mm), signaling localized improvements in moisture conditions. In the Pastoral North East (Mandera, Wajir, Garissa, and Isiolo) and parts of Marsabit , rainfall remained generally light and poorly distributed, with Mandera, Wajir, and Garissa rece iving minimal precipitation, while parts of Marsabit and Isiolo recorded localized totals of 21–50 mm.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 6
+  },
+  {
+    "id": 218,
+    "text": "ing minimal precipitation, while parts of Marsabit and Isiolo recorded localized totals of 21–50 mm. Across the south -eastern lowlands (Kitui, Makueni, Kajiado, Taita Taveta, and Tana River), rainfall activity improved slightly, with most areas receiving 21 –50 mm and isolated pockets in Taita Taveta and Kajiado exceeding 50 mm, offering temporary improvem ents in pasture and water availability. Similarly, the Coastal counties of Kilifi, Kwale, Lamu, and coastal Tana River recorded light to moderate rainfall (21–50 mm), with relatively heavier pockets in southern coastal areas such as Kwale.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 7
+  },
+  {
+    "id": 219,
+    "text": "derate rainfall (21–50 mm), with relatively heavier pockets in southern coastal areas such as Kwale. Overall, despite the modest increase in rainfall intensity, much of the northern and north-eastern counties continued to receive light and erratically distributed rainfall, limiting meaningful recharge of soil moisture, pasture regeneration, and water resources, and sustaining underlying drought risk across pastoral and agro pastoral livelihood zones.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 8
+  },
+  {
+    "id": 220,
+    "text": "esources, and sustaining underlying drought risk across pastoral and agro pastoral livelihood zones. 2.1.2 March 2026 Rainfall Forecast The March 2026 rainfall outlook points to a generally favorable onset of the long rains across most ASAL counties, with near to above-average rainfall expected in several regions. This is likely to Figure 2: Rainfall Performance in February 3 support gradual recovery of rangeland resources, improve soil moisture, and contribute to partial recharge of water sources following the recent drought.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 9
+  },
+  {
+    "id": 221,
+    "text": "ove soil moisture, and contribute to partial recharge of water sources following the recent drought. However, spatial variability in rainfall performance is expected, particularly in parts of the north-eastern ASAL counties, where recovery may be slower. In the Pastoral N orth West cluster ( Turkana and Samburu) and West Pokot, rainfall is forecast to be near to above average, which may support early pasture and browse regeneration and localized improvement in water availability.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 10
+  },
+  {
+    "id": 222,
+    "text": "h may support early pasture and browse regeneration and localized improvement in water availability. Counties in the Pastoral North East cluster (Mandera, Wajir, Garissa, and Isiolo) and Marsabit are expected to receive near -average rainfall. While this represents an improvement from preceding dry conditions, the timing and distribution of rainfall will be critical in determining the extent of rangeland recovery.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 11
+  },
+  {
+    "id": 223,
+    "text": "iming and distribution of rainfall will be critical in determining the extent of rangeland recovery. Meanwhile, the south-eastern lowlands (Kitui, Makueni, Kajiado, and Taita Taveta) are likely to experience near to above-average rainfall, which is expected to enhance soil moisture and support vegetation regeneration. The coastal counties of Tana River, Kilifi, Lamu, and Kwale are also projected to receive near -average rainfall with localized above -average pockets, potentially driving gradual improvements in vegetation and surface water availability.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 12
+  },
+  {
+    "id": 224,
+    "text": "rage pockets, potentially driving gradual improvements in vegetation and surface water availability. Overall, the projected onset of the long rains offers ca utious optimism for easing drought conditions, but close monitoring of rainfall distribution and continuity will be essential, as uneven performance could slow recovery and sustain localized drought risk in vulnerable pastoral areas.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 13
+  },
+  {
+    "id": 225,
+    "text": "ven performance could slow recovery and sustain localized drought risk in vulnerable pastoral areas. 2.2 Vegetation Condition Variation in v egetation condition was noted across the ASAL counties ; while it generally stabilized in the Agro-pastoral, South Eastern Marginal Agriculture and some parts of the Pastoral North West clusters , notable declines were observed in the Pastoral North East and Coastal Marginal Agriculture Livelihood Clusters compared to the previous month.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 14
+  },
+  {
+    "id": 226,
+    "text": "oral North East and Coastal Marginal Agriculture Livelihood Clusters compared to the previous month. The deterioration in vegetation greenness reflected persistent moisture stress and rising temperatures, that continued to constrain pasture regeneration and rangeland recovery despite localized rainfall. Nyeri (Kieni) Figure 3: March 2026 Rainfall Forecast 4 was the only county that registered above-normal vegetation greenness, while Baringo, Narok and Makueni maintained near -normal vegetation conditions, indicating relatively stable forage availability.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 15
+  },
+  {
+    "id": 227,
+    "text": "eni maintained near -normal vegetation conditions, indicating relatively stable forage availability. Across much of the ASAL areas, however, vegetation deficits intensified. Twelve counties—Garissa, Lamu, Marsabit, Meru, Tharaka Nithi, Embu, Kitui, Turkana, West Pokot, Samburu, Laikipia, and Kajiado —recorded moderate vegetation deficits, signaling growing pressure on pasture resources and rangeland productivit y.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 16
+  },
+  {
+    "id": 228,
+    "text": "te vegetation deficits, signaling growing pressure on pasture resources and rangeland productivit y. Severe vegetation deficits were observed in Kwale, Wajir, Tana River, Taita Taveta, and Isiolo, highlighting areas where grazing resources are rapidly diminishing and where pastoral livelihoods face increasing strain. Conditions were most critical in Mandera and Kilifi, where vegetation greenness remained within the extreme deficit band, pointing to acute rangeland degradation and heightened drought risk.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 17
+  },
+  {
+    "id": 229,
+    "text": "ithin the extreme deficit band, pointing to acute rangeland degradation and heightened drought risk. Figure 3 presents the spatial distribution of vegetation conditions across the ASAL counties at the end of January and February 2026, while Table 1 provides detailed county-level analysis, with particular focus on the most affected sub-counties. 5 Table1: Vegetation Condition Index (VCI), February 2026 Category County Sub Counties (No) Extreme Vegetation Deficit (2) Mandera, Kilifi",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 18
+  },
+  {
+    "id": 230,
+    "text": "VCI), February 2026 Category County Sub Counties (No) Extreme Vegetation Deficit (2) Mandera, Kilifi (16) Banissa, Mandera North , Ganze, Kaloleni, Igembe North , Mwingi West , Mandera East , Lafey, Garsen, Wajir East , Dadaab, Kinango, Tarbaj, Magarini, Wajir South, Eldas Severe vegetation deficit (5) Isiolo, Wajir, Kwale, Tana River, Taita Taveta",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 19
+  },
+  {
+    "id": 231,
+    "text": "ini, Wajir South, Eldas Severe vegetation deficit (5) Isiolo, Wajir, Kwale, Tana River, Taita Taveta (22) Tharaka, Wajir West, Mandera West, Galole, Kajiado North, Isiolo North, Mandera South, Voi, Tigania West, Kitui East, Moyale, Mwingi North, Rabai, Wajir North, Buuri, Saku, Samburu East, Lagdera, Kilifi South, Laisamis, Isiolo South, Mwatate Moderate vegetation deficit",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 20
+  },
+  {
+    "id": 232,
+    "text": "ku, Samburu East, Lagdera, Kilifi South, Laisamis, Isiolo South, Mwatate Moderate vegetation deficit (13) Garissa, Kitui, Lamu, Marsabit, Samburu, Kajiado, Tharaka Nithi, Meru, West Pokot, Turkana, Laikipia, Embu, Narok (36) Wundanyi, Bura, Taveta, Fafi, Balambala, Kajiado South , Narok East , Kitui West , Lunga Lunga , Lamu East , Kacheliba, Mwingi East, Gachoka, Loima, Laikipia North, Kajiado West, Garissa Township, North Horr, Kitui South, Matuga, Siakago, Kajiado Central, Igembe Central, Malindi, Narok South, Ijara, Samburu North, Kajiado East, Turkana North, Narok North , North Imenti , Mbooni, Sigor, Kitui Rural, Tigania East, Turkana Central",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 21
+  },
+  {
+    "id": 233,
+    "text": "urkana North, Narok North , North Imenti , Mbooni, Sigor, Kitui Rural, Tigania East, Turkana Central 1.3. Livestock Productivity 1.3.1 Livestock Body Condition Livestock body condition across most ASAL co unties remained generally fair, accounting for approximately 78 percent of the areas under monitoring . However, poor body condition was reported in parts of Garissa, Tana River, Mandera, Samburu, and Wajir (Table 2).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 22
+  },
+  {
+    "id": 234,
+    "text": "body condition was reported in parts of Garissa, Tana River, Mandera, Samburu, and Wajir (Table 2). The observed conditions were largely attributed to increasing trekking distances by livestock in search of pasture and water, reflecting localized pressure on available rangeland resources. Despite these challenges, forage availability was partly supported by off-season rainfall received in February, alongside the presence of crop residues in some farming areas, which helped supplement livesto ck feed and contributed to maintaining relatively stable body conditions in s ome counties.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 23
+  },
+  {
+    "id": 235,
+    "text": "livesto ck feed and contributed to maintaining relatively stable body conditions in s ome counties. Furthermore, ongoing livestock health interventions, including vaccination campaigns implemented by county governments and other stakeholders, continued to support livestock productivity and helped sustain the generally stable body condition recorded during the monitoring period. 6 Table 2.0: Livestock Body Condition, February 2026 Cattle Goats/Sheep Poor Fair Good Poor Fair Good Wajir Mandera Garissa Tana River Samburu",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 24
+  },
+  {
+    "id": 236,
+    "text": "ruary 2026 Cattle Goats/Sheep Poor Fair Good Poor Fair Good Wajir Mandera Garissa Tana River Samburu Makueni, Meru Taita Taveta Narok, Kitui, Nyeri West Pokot, Embu Turkana, Lamu Baringo, Kwale Tharaka-Nithi Kajiado, Isiolo Kilifi, Marsabit Wajir Mandera Makueni, Taita Taveta Meru, Narok, Embu Garissa, West Pokot Turkana, Baringo Tharaka-Nithi, Kwale Lamu, Laikipia, Nyeri Kajiado, Isiolo, Kitui Tana River, Kilifi Marsabit, Samburu",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 25
+  },
+  {
+    "id": 237,
+    "text": "araka-Nithi, Kwale Lamu, Laikipia, Nyeri Kajiado, Isiolo, Kitui Tana River, Kilifi Marsabit, Samburu 1.3.2 Milk production A stable trend in milk production was recorded across the majority of the ASAL counties, accounting for approximately 73 percent of the areas under surveillance. However, a declining trend was reported in Garissa, Isiolo, Turkana, Kitui, Nyeri, and Tharaka Nithi (Table 3).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 26
+  },
+  {
+    "id": 238,
+    "text": "declining trend was reported in Garissa, Isiolo, Turkana, Kitui, Nyeri, and Tharaka Nithi (Table 3). The generally stable milk production trend was associated with minimal disease incidences, as well as fair livestock body condition, which was partly supported by the availability of dry forage, though in limited quantities across some counties. In addition, limited migration of lactating herds, many of which were supported through supplementary feeding, contributed to sustaining milk production levels during the reporting period.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 27
+  },
+  {
+    "id": 239,
+    "text": "supplementary feeding, contributed to sustaining milk production levels during the reporting period. Despite the observed stability, milk production remained below the expected seasonal averages in approximately 82 percent of the counties. This was largely attributed to the effects of the prolonged drought, which has continued to constrain pasture and water availability and consequently affecting livestock productivity in several ASAL areas. Table 3.0: Milk production, February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Turkana Embu Kwale Narok",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 28
+  },
+  {
+    "id": 240,
+    "text": "Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Turkana Embu Kwale Narok Baringo Garissa Samburu Wajir, West Pokot Isiolo, Mandera Marsabit, Kitui Tana River, Nyeri Kajiado, Kilifi Laikipia, Lamu Makueni, Meru Taita Taveta, Tharaka Nithi Samburu Kwale Makueni Narok Baringo, Lamu Mandera, Meru Marsabit, Embu Tana River Wajir, Kajiado Kilifi, Laikipia Taita Taveta West Pokot Garissa Isiolo Turkana Kitui Nyeri, Tharaka- Nithi 7 1.3.3.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 29
+  },
+  {
+    "id": 241,
+    "text": "Kilifi, Laikipia Taita Taveta West Pokot Garissa Isiolo Turkana Kitui Nyeri, Tharaka- Nithi 7 1.3.3. Livestock diseases Peste des Petits Ruminants (PPR) and Contagious Caprine Pleuropneumonia (CCPP) remained one of the most prevalent diseases affecting small ruminants during the reporting period. Cases were reported in West Pokot (Chepareria and Kapchok), Laikipia, Mandera (Mandera North, Lafey, and Banisa where it contributed to notable mortality), Garissa, Turkana, and Marsabit (widespread in Saku and Laisamis) counties.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 30
+  },
+  {
+    "id": 242,
+    "text": "ed to notable mortality), Garissa, Turkana, and Marsabit (widespread in Saku and Laisamis) counties. Contagious Bovine Pleuropneumonia (CBPP) cases affecting cattle were reported in West Pokot, Kwale (Ndavaya areas of Kinango sub -county and parts of Mwereni) and Turkana (endemic in pastoral areas) counties. Suspected Foot and Mouth Disease (FMD) affecting cattle was reported in West Pokot (Kapchok), Laikipia, Marsabit (foot of Mt. Kulal), and Turkana counties .",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 31
+  },
+  {
+    "id": 243,
+    "text": "was reported in West Pokot (Kapchok), Laikipia, Marsabit (foot of Mt. Kulal), and Turkana counties . Vector-borne Diseases increased in Garissa, Mandera, and Marsabit counties due to a rise in vectors such as ticks, mites, lice, and biting flies. In Garissa, increased cases of anaplasmosis, babesiosis, and trypanosomiasis were reported in Barakai, Kadhilash, Gurufa, Afweyn, Dertu, Saka, and Degwardey , mainly affecting cattle an d camels. Trypanosomiasis was also commonly reported in Mandera County.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 32
+  },
+  {
+    "id": 244,
+    "text": ", mainly affecting cattle an d camels. Trypanosomiasis was also commonly reported in Mandera County. In Marsabit, East Coast Fever (ECF) cases were reported in Boru Haro and areas around Jirime in Saku sub -county. Sheep and Goat Pox affecting small ruminants was reported in Mandera, Garissa, and Laikipia counties, where the disease remains a recurring livestock health concern.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 33
+  },
+  {
+    "id": 245,
+    "text": "era, Garissa, and Laikipia counties, where the disease remains a recurring livestock health concern. Rabies cases were reported in Marsabit County {(Moyale- outbreaks occurred in Anona, Sololo, Waye, and Aria ), (Saku-cases were reported in Manyatta Jillo, where suspected rabid dogs killed several sheep and goats), and North Horr- dog bite incidents were also reported in Malabot area)}. 1.3.4 Cattle prices Cattle prices remained generally stable across most counties during the reporting period (Table 4).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 34
+  },
+  {
+    "id": 246,
+    "text": "Cattle prices remained generally stable across most counties during the reporting period (Table 4). The stability was largely associated with the fair body condition of livestock , that was supported by access to pasture and water resources, albeit in limited quantities across some areas. However, a decline in cattle prices was reported in approximately 30 percent of the counties attributable to the deteriorating livestock body condition resulting from constrained pasture availability, as well as periodic market oversupply.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 35
+  },
+  {
+    "id": 247,
+    "text": "dy condition resulting from constrained pasture availability, as well as periodic market oversupply. Other factors influencing the decline included weakened market dynamics, such as reduced accessibility to key livestock markets and limited purchasing power among buyers. Despite these localized declines, the prevailing cattle prices remained above their respective long-term averages in majority of the counties during the period under review largely sustained by supplementary livestock feed sources such as crop residues, prevailing market supply 8",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 36
+  },
+  {
+    "id": 248,
+    "text": "sustained by supplementary livestock feed sources such as crop residues, prevailing market supply 8 dynamics, fluctuations in demand, and the broader livestock pricing trends observed across the ASAL markets. Table 4.0: Cattle prices, February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Garissa, Isiolo Marsabit, Samburu Turkana, Wajir Kilifi, Laikipia Makueni, Meru Narok, Taita Taveta Nyeri, Tharaka Nithi Baringo Kajiado Kitui, West- Pokot Mandera Tana River Embu Kwale Lamu",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 37
+  },
+  {
+    "id": 249,
+    "text": "ta Taveta Nyeri, Tharaka Nithi Baringo Kajiado Kitui, West- Pokot Mandera Tana River Embu Kwale Lamu Garissa Tana River Narok, Tharaka- Nithi Baringo, Meru Mandera, Embu, Kitui Turkana Kajiado Kilifi, Kwale Laikipia Makueni Taita Taveta Isiolo Marsabit Samburu Wajir Lamu Nyeri West Pokot 1.3.5 Goat Prices The market price of goats remained largely stable across most ASAL counties during the month under review. However, a declining trend was reported Isiolo, Mandera, Tana River, and Kwale (Table 5).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 38
+  },
+  {
+    "id": 250,
+    "text": "er review. However, a declining trend was reported Isiolo, Mandera, Tana River, and Kwale (Table 5). The deterioration in prices in these counties was mainly attributed to imbalances in market demand and supply, which exerted downward pressure on prevailing goat prices. Overall, most counties recorded goat prices within the normal range for the season, with the exception of Mandera, Wajir, Kwale, West Pokot, and Meru.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 39
+  },
+  {
+    "id": 251,
+    "text": "the normal range for the season, with the exception of Mandera, Wajir, Kwale, West Pokot, and Meru. In many markets, above-average goat prices were sustained during the reporting period, largely supported by fair livestock body condition, which was partly maintained through the availability of browse, although on a gradually declining trend. Additionally, relatively strong market performance and sustained demand for goats contributed to maintaining the favorable price levels observed during the month.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 40
+  },
+  {
+    "id": 252,
+    "text": "ed demand for goats contributed to maintaining the favorable price levels observed during the month. Table 5.0: Goat prices, February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Baringo, Garissa Isiolo, Marsabit Samburu, Embu Kajiado, Kilifi Kitui, Laikipia Lamu, Makueni Narok, Nyeri Taita Taveta Tana River Turkana, Tharaka- Nithi Mandera Wajir Kwale, West- Pokot Meru Garissa Narok, Tharaka- Nithi Baringo, Marsabit Samburu, Turkana Wajir, Laikipia Embu, Kajiado Kilifi, West Pokot Kitui, Lamu Makueni, Meru Nyeri, Taita Taveta Isiolo Mandera Tana River Kwale 9",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 41
+  },
+  {
+    "id": 253,
+    "text": "o Kilifi, West Pokot Kitui, Lamu Makueni, Meru Nyeri, Taita Taveta Isiolo Mandera Tana River Kwale 9 1.4 Crop production Crop production across most counties remained below average, largely due to poor and erratic rainfall experienced during the previous season. In the Coastal and South Eastern marginal agricultural zones, many areas reported poor yields or complete crop failure, particularly for maize, beans, and cowpeas, although a few locations were still harvesting limited produce.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 42
+  },
+  {
+    "id": 254,
+    "text": "larly for maize, beans, and cowpeas, although a few locations were still harvesting limited produce. As a result, most farmers shifted focus to land preparation and early planting in anticipation of the long rains season. In the agro-pastoral zones, planting and crop management were the main activities, with crop conditions ranging from fair to good in areas that received some rainfall. Table 6 summarizes the state of crop production across select counties in the ASALs throughout February.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 43
+  },
+  {
+    "id": 255,
+    "text": "e 6 summarizes the state of crop production across select counties in the ASALs throughout February. Table 6.0: Current status of crop production Cluster Counties Current state of crop production Coastal Marginal agriculture Lamu A few farmers across the livelihood zones were preparing their land in readiness for the anticipated long rains season. Taita Taveta In horticulture/dairy areas crops were mostly at harvesting stage with some still being harvested green. In irrigated and mixed farming zones, maize harvesting continued while beans and cowpeas had already been harvested.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 44
+  },
+  {
+    "id": 256,
+    "text": "mixed farming zones, maize harvesting continued while beans and cowpeas had already been harvested. Kilifi Most farmers focused on land preparation during the reporting month in anticipation of the upcoming long rains season. Kwale Crops in most livelihood zones had reached maturity and were being harvested, although many seasonal crops such as maize, green grams and cowpeas largely failed. South Eastern Marginal agriculture Embu The marginal mixed farming zone experienced complete crop failure, while harvests in mixed farming areas were about 70–80 percent below normal.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 45
+  },
+  {
+    "id": 257,
+    "text": "complete crop failure, while harvests in mixed farming areas were about 70–80 percent below normal. Some farmers began preparing land and planting for the next season. Tharaka Nithi Farm activities mainly involved land preparation ahead of the long rains. Early planting had started in parts of the mixed farming zone, although most farmers were still waiting for consistent rainfall before large-scale planting. Kitui Harvesting had largely concluded but yields were very low, with some areas recording no harvest due to poor OND rainfall.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 46
+  },
+  {
+    "id": 258,
+    "text": "y concluded but yields were very low, with some areas recording no harvest due to poor OND rainfall. Only limited post- harvest handling occurred where a small portion of crops survived. Makueni Harvesting was ongoing across the county, though conditions varied from fair in better areas to poor in marginal zones due to erratic rainfall, 10 moisture stress and pests. Yield losses of up to 65 –70 percent were expected in the most affected areas.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 47
+  },
+  {
+    "id": 259,
+    "text": "ure stress and pests. Yield losses of up to 65 –70 percent were expected in the most affected areas. Agro- pastoral Narok Maize crops were in early to mid-vegetative stages following improved rainfall performance, generally in fair to good condition, with weeding being the main farm activity. Laikipia Around 60 –70 percent of farmers had prepared land for the MAM season and were sourcing inputs such as certified seeds and fertilizers. Early planted crops had germinated well, while wheat land preparation and Irish potato production were ongoing.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 48
+  },
+  {
+    "id": 260,
+    "text": "ed crops had germinated well, while wheat land preparation and Irish potato production were ongoing. West Pokot Farmers were engaged in land preparation and planting activities in preparation for the March–April–May rainy season. Kajiado Planting was underway in most areas, while some farmers continued with land preparation. In drier eastern zones replanting was taking place after early crops suffered moisture stress. Nyeri Farmers were harvesting crops from the previous short rains season while simultaneously preparing land for the upcoming long rains season.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 49
+  },
+  {
+    "id": 261,
+    "text": "previous short rains season while simultaneously preparing land for the upcoming long rains season. 1.4.1 Maize prices Maize prices remained generally stable in approximately 70 percent of the counties attributable to cross-border imports, the availability of carry -over stocks from the previous production season, and consistent market inflows from neighbouring agricultural counties, which collectively supplemented local market supplies (Table 7).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 50
+  },
+  {
+    "id": 262,
+    "text": "neighbouring agricultural counties, which collectively supplemented local market supplies (Table 7). However, price increases were reported in Isiolo, Mandera, Wajir, Kajiado, Kilifi, Kwale, and West Pokot ascribed to increased reliance on market purchases, and the growing use of maize as supplementary livestock feed by pastoral households in response to declining forage availability in some areas. Overall, the prevailing maize prices in most counties remained within the normal seasonal range, with the exception of Samburu, Wajir, and Makueni.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 51
+  },
+  {
+    "id": 263,
+    "text": "unties remained within the normal seasonal range, with the exception of Samburu, Wajir, and Makueni. In several markets, average price levels were observed, partly due to reduced demand for maize, as households increasingly relied on alternative cereal substitutes available in local markets. 11 Table 7.0: Maize prices, February 2026 Current status Trend Above LTA At/close to LTA Below LTA Improving Stable Worsening Baringo, Tana- River Kwale Nyeri, West- Pokot",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 52
+  },
+  {
+    "id": 264,
+    "text": "A At/close to LTA Below LTA Improving Stable Worsening Baringo, Tana- River Kwale Nyeri, West- Pokot Garissa, Isiolo Mandera, Kitui Marsabit, Meru Turkana, Narok Embu, Lamu Kajiado, Kilifi Laikipia Taita Taveta Tharaka Nithi Samburu Wajir Makueni Tana River Embu Baringo, Garissa Marsabit, Lamu Samburu, Kitui Turkana, Laikipia Makueni, Meru Narok, Nyeri Taita Taveta Tharaka Nithi Isiolo Mandera Wajir Kajiado Kilifi Kwale West Pokot",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 53
+  },
+  {
+    "id": 265,
+    "text": "i, Meru Narok, Nyeri Taita Taveta Tharaka Nithi Isiolo Mandera Wajir Kajiado Kilifi Kwale West Pokot 1.5 WATER ACCESS 1.5.1 Access to water for households During the month under review, approximately 78 percent of the ASAL counties reported no significant change in the average distance to water sources compared to the previous month (Table 8). The observed stability was largely attributed to improved water a vailability following the partial recharge of nearby open water sources, resulting from the off -season rainfall received in February.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 54
+  },
+  {
+    "id": 266,
+    "text": "recharge of nearby open water sources, resulting from the off -season rainfall received in February. However, increased trekking distances were reported in some areas, mainly due to breakdowns of strategic boreholes and ina dequate recharge of water sources as evidenced in Kwale. Among the arid counties, the longest trekking distance was recorded in Wajir, averaging 11.8 kilometres while in the semi-arid counties, the longest distances were reported in Kitui and Lamu, each recording an average of 7.2 kilometres.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 55
+  },
+  {
+    "id": 267,
+    "text": "the longest distances were reported in Kitui and Lamu, each recording an average of 7.2 kilometres. Overall, about 60 percent of the counties recorded trekking distances within their respective long-term averages. In the remaining counties where distances exceeded the normal range, the deviation was mainly attributed to high evaporation rates that rendered some water sources non-functional, forcing households to rely on more distant alternative water points. 12",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 56
+  },
+  {
+    "id": 268,
+    "text": "ater sources non-functional, forcing households to rely on more distant alternative water points. 12 Table 8.0: Distance from Households to Main Water Sources, February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Garissa Tana River Wajir, Kitui Kilifi, Kwale Laikipia Lamu, Narok Marsabit Makueni Baringo, Isiolo Mandera, Meru Samburu, Nyeri Turkana Embu, Kajiado Taita Taveta Tharaka Nithi West Pokot Baringo Kajiado Narok, Taita Taveta West Pokot",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 57
+  },
+  {
+    "id": 269,
+    "text": "a Embu, Kajiado Taita Taveta Tharaka Nithi West Pokot Baringo Kajiado Narok, Taita Taveta West Pokot Garissa, Isiolo Mandera, Wajir Marsabit, Kitui Samburu, Lamu Tana River Turkana, Kilifi Tharaka Nithi Embu Kwale Laikipia Makueni Meru 1.5.2 Access to water for livestock Approximately 43 percent of the ASAL counties reported an increase in the distance to water points from grazing areas, while 57 percent recorded no significant change compared to January (Table 9).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 58
+  },
+  {
+    "id": 270,
+    "text": "s from grazing areas, while 57 percent recorded no significant change compared to January (Table 9). The increasing distances were mainly attributed to the dry ing up of some open water sources due to poor recharge from the previous rainfall season, a decline in groundwater levels, reduced river flows, and breakdown of water facilities resulting from prolonged overuse.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 59
+  },
+  {
+    "id": 271,
+    "text": "ter levels, reduced river flows, and breakdown of water facilities resulting from prolonged overuse. The longest trekking distance from grazing areas to water points among the arid counties was reported in Mandera, averaging 16.4 kilometres, while among the semi -arid counties, Lamu recorded the longest distance 10.2 kilometres.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 60
+  },
+  {
+    "id": 272,
+    "text": "kilometres, while among the semi -arid counties, Lamu recorded the longest distance 10.2 kilometres. Despite the observed increases in some areas, the prevailing trekking distances in majority of counties remained within the normal seasonal range attributed to the availability of dry forage around some water sources, sustained by the off -season rainfall received during the month un der review, particularly in select counties within the Agro -pastoral and South Eastern Marginal Agriculture livelihood clusters.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 61
+  },
+  {
+    "id": 273,
+    "text": "elect counties within the Agro -pastoral and South Eastern Marginal Agriculture livelihood clusters. Table 9.0: Distance from Grazing area to Main Water Sources, February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Garissa Marsabit Tana River Turkana Kitui, Kwale Laikipia Lamu, Narok West Pokot Isiolo Mandera Samburu Wajir Kilifi Baringo Embu, Meru Kajiado Makueni Nyeri Taita Taveta Tharaka Nithi Kajiado Nyeri Taita Taveta West Pokot Baringo Mandera Wajir, Kitui Kwale, Lamu Makueni Meru Tharaka Nithi",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 62
+  },
+  {
+    "id": 274,
+    "text": "do Nyeri Taita Taveta West Pokot Baringo Mandera Wajir, Kitui Kwale, Lamu Makueni Meru Tharaka Nithi Garissa, Isiolo Marsabit, Embu Samburu, Narok Tana River Turkana Kilifi, Laikipia 13 1.6 Terms of trade The livestock-to-cereal terms of trade (ToT) remained stable in approximately 60 percent of the ASAL counties, while the remaining counties recorded a worsening trend during the month under review (Table 10).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 63
+  },
+  {
+    "id": 275,
+    "text": "s, while the remaining counties recorded a worsening trend during the month under review (Table 10). The observed stability across most counties was mainly driven by stable goat prices alongside relatively unchanged maize prices, which helped maintain purchasing power for pastoral households in these areas. Among the arid counties, the lowest terms of trade, averaging 31 kilograms of maize per goat, were recorded in Mandera and Turkana.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 64
+  },
+  {
+    "id": 276,
+    "text": "west terms of trade, averaging 31 kilograms of maize per goat, were recorded in Mandera and Turkana. In the semi-arid counties, the lowest terms of trade were reported in Kwale, averaging 56 kilograms of maize per goat, indicating comparatively reduced purchasing power among pastoral households in these counties. With respect to the long-term seasonal averages, most counties recorded terms of trade within the normal range, with the exception of Mandera, Kwale, Makueni, and Meru.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 65
+  },
+  {
+    "id": 277,
+    "text": "ded terms of trade within the normal range, with the exception of Mandera, Kwale, Makueni, and Meru. The generally favorable terms of trade observed across the majority of counties were largely attributed to relatively stable livestock prices and favorable market conditions for livestock -dependent households during the reporting period.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 66
+  },
+  {
+    "id": 278,
+    "text": "ces and favorable market conditions for livestock -dependent households during the reporting period. Table 10.0: Terms of Trade, February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Baringo, Garissa Marsabit, Samburu Tana River, Embu Kajiado, Kilifi Laikipia, Lamu Nyeri, Taita Taveta Tharaka Nithi Isiolo, Narok Turkana Wajir, Kitui West Pokot Mandera Kwale Makueni Meru Garissa Embu, Narok Nyeri Tharaka Nithi Baringo Marsabit Wajir, Kitui Laikipia Lamu, Meru Makueni Taita Taveta Isiolo, Mandera Samburu, Kwale Tana River Turkana Kajiado, Kilifi West Pokot 1.7.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 67
+  },
+  {
+    "id": 279,
+    "text": "kueni Taita Taveta Isiolo, Mandera Samburu, Kwale Tana River Turkana Kajiado, Kilifi West Pokot 1.7. Health and nutrition The nutrition situation, as assessed through the Mid -Upper Arm Circumference (MUAC) measurements among children under five years, indicated a generally stable trend across the majority of the ASAL counties during the month under review. However, deteriorat ion in the nutrition status was reported Garissa, Isiolo, Wajir, Embu, Kilifi, Narok, and Tharaka Nithi (Table 11).",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 68
+  },
+  {
+    "id": 280,
+    "text": "ition status was reported Garissa, Isiolo, Wajir, Embu, Kilifi, Narok, and Tharaka Nithi (Table 11). The observed stability in most counties was partly attributed to improved access to nutrition services through integrated health outreach pr ogrammes, which continued to support routine screening and early identification of malnutrition cases. Conversely, the worsening trend reported 14 in the affected counties was associated with limited access to diverse diets, as well as declining household milk consumption, which reduced the availability of key nutrients for young children.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 69
+  },
+  {
+    "id": 281,
+    "text": "ning household milk consumption, which reduced the availability of key nutrients for young children. Overall, the proportion of children classified as ‘at risk’ o f malnutrition was above the usual seasonal range in approximately 52 percent of the counties. The elevated proportions were mainly linked to persistent poor health -seeking behaviour, high morbidity levels, and suboptimal child care and feeding practices, which continue to influence child nutrition outcomes in several ASAL areas.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 70
+  },
+  {
+    "id": 282,
+    "text": "e and feeding practices, which continue to influence child nutrition outcomes in several ASAL areas. Table 11.0: Children at risk of malnutrition (MUAC), February 2026 Current status Trend Above LTA At LTA Below LTA Improving Stable Worsening Garissa, Isiolo Mandera, Kwale Marsabit, Lamu Turkana, Meru Kilifi, Kitui Narok Tharaka Nithi Baringo Kajiado Laikipia Taita Taveta West Pokot Samburu Tana River Wajir Embu, Nyeri Makueni Baringo, Lamu Marsabit, Meru Samburu Tana River Turkana Kwale, Laikipia Makueni West Pokot Mandera Kajiado Kitui Nyeri Taita Taveta",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 71
+  },
+  {
+    "id": 283,
+    "text": "mburu Tana River Turkana Kwale, Laikipia Makueni West Pokot Mandera Kajiado Kitui Nyeri Taita Taveta Garissa, Isiolo Wajir, Embu Kilifi, Narok Tharaka Nithi 2.0 Drought phase classification Based on early -warning indicators monitored by the Kenya Drought Early Warning System, Mandera, Wajir, Kilifi, and Kwale Counties were classified under the “Alarm” phase.",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 72
+  },
+  {
+    "id": 284,
+    "text": "Warning System, Mandera, Wajir, Kilifi, and Kwale Counties were classified under the “Alarm” phase. Thirteen counties—Samburu, Baringo, Marsabit, Kitui, Taita Taveta, Kajiado, West Pokot, Garissa, Isiolo, Tana River, Turkana, Lamu, and Tharaka Nithi —were in the “Alert” phase, with some counties showing stable conditions while others exhibited deteriorating trends. Two counties—Laikipia and Narok—were categorized under the “Pre -Alert” phase, while Makueni, Nyeri, Embu and Meru remained in the “Normal” phase, with Meru showing signs of deterioration (Table 12). 15",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 73
+  },
+  {
+    "id": 285,
+    "text": "mbu and Meru remained in the “Normal” phase, with Meru showing signs of deterioration (Table 12). 15 Table 12.0: Drought phase classification, February 2026 Drought status Trend Improving Stable Worsening/Deteriorating Normal Makueni, Nyeri, Embu Meru, Pre Alert Laikipia, Narok Alert Samburu, Kajiado, Baringo Marsabit, Kitui, Taita Taveta, West Pokot Garissa, Isiolo, Tana River, Turkana, Lamu, Tharaka Nithi, Alarm Mandera, Wajir, Kilifi, Kwale Emergency Recovery",
+    "source": "National_Drought_Early_Warning_Bulletin_Feb_202620260311171955.pdf",
+    "chunk": 74
+  }
+]
