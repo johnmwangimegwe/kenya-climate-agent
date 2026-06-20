@@ -157,13 +157,6 @@ Open `demo.ipynb` locally or in Colab and run the cells top to bottom:
 The notebook is a thin runner — all logic lives in `src/`, so the notebook just
 imports and calls it.
 
-## **Demo screenshots**
-
-> _Add screenshots here before presenting._
-
-- `docs/screenshot_app.png` — Streamlit app with answer + map _(placeholder)_
-- `docs/screenshot_map.png` — county risk choropleth _(placeholder)_
-- `docs/screenshot_log.png` — execution log / plan _(placeholder)_
 
 ## **How the risk score works**
 

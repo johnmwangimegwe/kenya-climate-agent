@@ -1,0 +1,631 @@
+{
+  "layers": {
+    "ALL|def|def": {
+      "counties": {
+        "Baringo": {
+          "flood": 0.392,
+          "rainfall": 0.799,
+          "elevation": 0.289
+        },
+        "Bomet": {
+          "flood": 0.417,
+          "rainfall": 1.0,
+          "elevation": 0.042
+        },
+        "Bungoma": {
+          "flood": 0.32,
+          "rainfall": 1.0,
+          "elevation": 0.224
+        },
+        "Busia": {
+          "flood": 0.367,
+          "rainfall": 1.0,
+          "elevation": 0.411
+        },
+        "Elgeyo Marakwet": {
+          "flood": 0.386,
+          "rainfall": 0.908,
+          "elevation": 0.207
+        },
+        "Embu": {
+          "flood": 0.356,
+          "rainfall": 1.0,
+          "elevation": 0.375
+        },
+        "Garissa": {
+          "flood": 0.458,
+          "rainfall": 0.325,
+          "elevation": 0.913
+        },
+        "Homa Bay": {
+          "flood": 0.537,
+          "rainfall": 0.995,
+          "elevation": 0.383
+        },
+        "Isiolo": {
+          "flood": 0.461,
+          "rainfall": 0.381,
+          "elevation": 0.791
+        },
+        "Kajiado": {
+          "flood": 0.439,
+          "rainfall": 0.971,
+          "elevation": 0.307
+        },
+        "Kakamega": {
+          "flood": 0.335,
+          "rainfall": 1.0,
+          "elevation": 0.228
+        },
+        "Kericho": {
+          "flood": 0.372,
+          "rainfall": 1.0,
+          "elevation": 0.0
+        },
+        "Kiambu": {
+          "flood": 0.38,
+          "rainfall": 1.0,
+          "elevation": 0.039
+        },
+        "Kilifi": {
+          "flood": 0.489,
+          "rainfall": 0.519,
+          "elevation": 0.936
+        },
+        "Kirinyaga": {
+          "flood": 0.361,
+          "rainfall": 1.0,
+          "elevation": 0.0
+        },
+        "Kisii": {
+          "flood": 0.347,
+          "rainfall": 1.0,
+          "elevation": 0.136
+        },
+        "Kisumu": {
+          "flood": 0.534,
+          "rainfall": 1.0,
+          "elevation": 0.4
+        },
+        "Kitui": {
+          "flood": 0.359,
+          "rainfall": 0.772,
+          "elevation": 0.643
+        },
+        "Kwale": {
+          "flood": 0.414,
+          "rainfall": 0.703,
+          "elevation": 0.855
+        },
+        "Laikipia": {
+          "flood": 0.465,
+          "rainfall": 0.544,
+          "elevation": 0.095
+        },
+        "Lamu": {
+          "flood": 0.476,
+          "rainfall": 0.441,
+          "elevation": 0.985
+        },
+        "Machakos": {
+          "flood": 0.382,
+          "rainfall": 1.0,
+          "elevation": 0.261
+        },
+        "Makueni": {
+          "flood": 0.389,
+          "rainfall": 0.832,
+          "elevation": 0.423
+        },
+        "Mandera": {
+          "flood": 0.422,
+          "rainfall": 0.52,
+          "elevation": 0.723
+        },
+        "Marsabit": {
+          "flood": 0.448,
+          "rainfall": 0.405,
+          "elevation": 0.717
+        },
+        "Meru": {
+          "flood": 0.403,
+          "rainfall": 0.894,
+          "elevation": 0.24
+        },
+        "Migori": {
+          "flood": 0.445,
+          "rainfall": 0.721,
+          "elevation": 0.313
+        },
+        "Mombasa": {
+          "flood": 0.409,
+          "rainfall": 0.682,
+          "elevation": 0.938
+        },
+        "Murang'a": {
+          "flood": 0.362,
+          "rainfall": 1.0,
+          "elevation": 0.291
+        },
+        "Nairobi": {
+          "flood": 0.395,
+          "rainfall": 1.0,
+          "elevation": 0.237
+        },
+        "Nakuru": {
+          "flood": 0.4,
+          "rainfall": 0.919,
+          "elevation": 0.0
+        },
+        "Nandi": {
+          "flood": 0.384,
+          "rainfall": 1.0,
+          "elevation": 0.0
+        },
+        "Narok": {
+          "flood": 0.417,
+          "rainfall": 1.0,
+          "elevation": 0.039
+        },
+        "Nyamira": {
+          "flood": 0.349,
+          "rainfall": 1.0,
+          "elevation": 0.148
+        },
+        "Nyandarua": {
+          "flood": 0.41,
+          "rainfall": 0.875,
+          "elevation": 0.0
+        },
+        "Nyeri": {
+          "flood": 0.387,
+          "rainfall": 1.0,
+          "elevation": 0.0
+        },
+        "Samburu": {
+          "flood": 0.41,
+          "rainfall": 0.46,
+          "elevation": 0.458
+        },
+        "Siaya": {
+          "flood": 0.485,
+          "rainfall": 1.0,
+          "elevation": 0.395
+        },
+        "Taita Taveta": {
+          "flood": 0.446,
+          "rainfall": 0.53,
+          "elevation": 0.685
+        },
+        "Tana River": {
+          "flood": 0.442,
+          "rainfall": 0.389,
+          "elevation": 0.925
+        },
+        "Tharaka Nithi": {
+          "flood": 0.365,
+          "rainfall": 0.786,
+          "elevation": 0.654
+        },
+        "Trans Nzoia": {
+          "flood": 0.369,
+          "rainfall": 1.0,
+          "elevation": 0.032
+        },
+        "Turkana": {
+          "flood": 0.504,
+          "rainfall": 0.418,
+          "elevation": 0.683
+        },
+        "Uasin Gishu": {
+          "flood": 0.412,
+          "rainfall": 1.0,
+          "elevation": 0.0
+        },
+        "Vihiga": {
+          "flood": 0.315,
+          "rainfall": 1.0,
+          "elevation": 0.237
+        },
+        "Wajir": {
+          "flood": 0.484,
+          "rainfall": 0.45,
+          "elevation": 0.852
+        },
+        "West Pokot": {
+          "flood": 0.41,
+          "rainfall": 0.644,
+          "elevation": 0.411
+        }
+      },
+      "meta": {
+        "source": "earth-engine",
+        "dates": [
+          "2026-03-01",
+          "2026-05-31"
+        ]
+      }
+    },
+    "Garissa,Tana River|def|def": {
+      "counties": {
+        "Tana River": {
+          "flood": 0.442,
+          "rainfall": 0.389,
+          "elevation": 0.925
+        },
+        "Garissa": {
+          "flood": 0.458,
+          "rainfall": 0.325,
+          "elevation": 0.913
+        }
+      },
+      "meta": {
+        "source": "earth-engine",
+        "dates": [
+          "2026-03-01",
+          "2026-05-31"
+        ]
+      }
+    },
+    "Mandera,Marsabit,Samburu,Turkana,Wajir|def|def": {
+      "counties": {
+        "Turkana": {
+          "flood": 0.504,
+          "rainfall": 0.418,
+          "elevation": 0.683
+        },
+        "Marsabit": {
+          "flood": 0.448,
+          "rainfall": 0.405,
+          "elevation": 0.717
+        },
+        "Mandera": {
+          "flood": 0.422,
+          "rainfall": 0.52,
+          "elevation": 0.723
+        },
+        "Wajir": {
+          "flood": 0.484,
+          "rainfall": 0.45,
+          "elevation": 0.852
+        },
+        "Samburu": {
+          "flood": 0.41,
+          "rainfall": 0.46,
+          "elevation": 0.458
+        }
+      },
+      "meta": {
+        "source": "earth-engine",
+        "dates": [
+          "2026-03-01",
+          "2026-05-31"
+        ]
+      }
+    },
+    "Garissa,Isiolo,Mandera,Marsabit,Samburu,Turkana,Wajir|def|def": {
+      "counties": {
+        "Turkana": {
+          "flood": 0.478,
+          "rainfall": 0.42,
+          "elevation": 0.668
+        },
+        "Marsabit": {
+          "flood": 0.463,
+          "rainfall": 0.419,
+          "elevation": 0.71
+        },
+        "Mandera": {
+          "flood": 0.418,
+          "rainfall": 0.494,
+          "elevation": 0.717
+        },
+        "Wajir": {
+          "flood": 0.478,
+          "rainfall": 0.449,
+          "elevation": 0.842
+        },
+        "Garissa": {
+          "flood": 0.451,
+          "rainfall": 0.354,
+          "elevation": 0.926
+        },
+        "Isiolo": {
+          "flood": 0.483,
+          "rainfall": 0.358,
+          "elevation": 0.772
+        },
+        "Samburu": {
+          "flood": 0.395,
+          "rainfall": 0.485,
+          "elevation": 0.407
+        }
+      },
+      "meta": {
+        "source": "earth-engine",
+        "dates": [
+          "2026-03-01",
+          "2026-05-31"
+        ]
+      }
+    }
+  },
+  "population": {
+    "ALL": {
+      "counties": {
+        "Baringo": {
+          "exposed_population": 617377,
+          "population_normalized": 0.138
+        },
+        "Bomet": {
+          "exposed_population": 1235194,
+          "population_normalized": 0.277
+        },
+        "Bungoma": {
+          "exposed_population": 2668774,
+          "population_normalized": 0.598
+        },
+        "Busia": {
+          "exposed_population": 1794723,
+          "population_normalized": 0.402
+        },
+        "Elgeyo Marakwet": {
+          "exposed_population": 618304,
+          "population_normalized": 0.138
+        },
+        "Embu": {
+          "exposed_population": 741189,
+          "population_normalized": 0.166
+        },
+        "Garissa": {
+          "exposed_population": 1025746,
+          "population_normalized": 0.23
+        },
+        "Homa Bay": {
+          "exposed_population": 822163,
+          "population_normalized": 0.184
+        },
+        "Isiolo": {
+          "exposed_population": 381999,
+          "population_normalized": 0.086
+        },
+        "Kajiado": {
+          "exposed_population": 2460982,
+          "population_normalized": 0.551
+        },
+        "Kakamega": {
+          "exposed_population": 1035206,
+          "population_normalized": 0.232
+        },
+        "Kericho": {
+          "exposed_population": 1114504,
+          "population_normalized": 0.25
+        },
+        "Kiambu": {
+          "exposed_population": 1965173,
+          "population_normalized": 0.44
+        },
+        "Kilifi": {
+          "exposed_population": 880071,
+          "population_normalized": 0.197
+        },
+        "Kirinyaga": {
+          "exposed_population": 456408,
+          "population_normalized": 0.102
+        },
+        "Kisii": {
+          "exposed_population": 1564761,
+          "population_normalized": 0.35
+        },
+        "Kisumu": {
+          "exposed_population": 805508,
+          "population_normalized": 0.18
+        },
+        "Kitui": {
+          "exposed_population": 946638,
+          "population_normalized": 0.212
+        },
+        "Kwale": {
+          "exposed_population": 397415,
+          "population_normalized": 0.089
+        },
+        "Laikipia": {
+          "exposed_population": 306651,
+          "population_normalized": 0.069
+        },
+        "Lamu": {
+          "exposed_population": 302352,
+          "population_normalized": 0.068
+        },
+        "Machakos": {
+          "exposed_population": 1156805,
+          "population_normalized": 0.259
+        },
+        "Makueni": {
+          "exposed_population": 999084,
+          "population_normalized": 0.224
+        },
+        "Mandera": {
+          "exposed_population": 1841125,
+          "population_normalized": 0.412
+        },
+        "Marsabit": {
+          "exposed_population": 329135,
+          "population_normalized": 0.074
+        },
+        "Meru": {
+          "exposed_population": 1517894,
+          "population_normalized": 0.34
+        },
+        "Migori": {
+          "exposed_population": 3307203,
+          "population_normalized": 0.741
+        },
+        "Mombasa": {
+          "exposed_population": 1723693,
+          "population_normalized": 0.386
+        },
+        "Murang'a": {
+          "exposed_population": 1207531,
+          "population_normalized": 0.27
+        },
+        "Nairobi": {
+          "exposed_population": 4464449,
+          "population_normalized": 1.0
+        },
+        "Nakuru": {
+          "exposed_population": 1679924,
+          "population_normalized": 0.376
+        },
+        "Nandi": {
+          "exposed_population": 908613,
+          "population_normalized": 0.204
+        },
+        "Narok": {
+          "exposed_population": 608768,
+          "population_normalized": 0.136
+        },
+        "Nyamira": {
+          "exposed_population": 1038222,
+          "population_normalized": 0.233
+        },
+        "Nyandarua": {
+          "exposed_population": 703133,
+          "population_normalized": 0.157
+        },
+        "Nyeri": {
+          "exposed_population": 760228,
+          "population_normalized": 0.17
+        },
+        "Samburu": {
+          "exposed_population": 330221,
+          "population_normalized": 0.074
+        },
+        "Siaya": {
+          "exposed_population": 1072611,
+          "population_normalized": 0.24
+        },
+        "Taita Taveta": {
+          "exposed_population": 452169,
+          "population_normalized": 0.101
+        },
+        "Tana River": {
+          "exposed_population": 287430,
+          "population_normalized": 0.064
+        },
+        "Tharaka Nithi": {
+          "exposed_population": 510225,
+          "population_normalized": 0.114
+        },
+        "Trans Nzoia": {
+          "exposed_population": 2335950,
+          "population_normalized": 0.523
+        },
+        "Turkana": {
+          "exposed_population": 870381,
+          "population_normalized": 0.195
+        },
+        "Uasin Gishu": {
+          "exposed_population": 1119306,
+          "population_normalized": 0.251
+        },
+        "Vihiga": {
+          "exposed_population": 948500,
+          "population_normalized": 0.212
+        },
+        "Wajir": {
+          "exposed_population": 1417614,
+          "population_normalized": 0.318
+        },
+        "West Pokot": {
+          "exposed_population": 1136584,
+          "population_normalized": 0.255
+        }
+      },
+      "meta": {
+        "source": "worldpop",
+        "year": 2020
+      }
+    },
+    "Garissa,Tana River": {
+      "counties": {
+        "Tana River": {
+          "exposed_population": 287430,
+          "population_normalized": 0.28
+        },
+        "Garissa": {
+          "exposed_population": 1025746,
+          "population_normalized": 1.0
+        }
+      },
+      "meta": {
+        "source": "worldpop",
+        "year": 2020
+      }
+    },
+    "Mandera,Marsabit,Samburu,Turkana,Wajir": {
+      "counties": {
+        "Turkana": {
+          "exposed_population": 870381,
+          "population_normalized": 0.473
+        },
+        "Marsabit": {
+          "exposed_population": 329135,
+          "population_normalized": 0.179
+        },
+        "Mandera": {
+          "exposed_population": 1841125,
+          "population_normalized": 1.0
+        },
+        "Wajir": {
+          "exposed_population": 1417614,
+          "population_normalized": 0.77
+        },
+        "Samburu": {
+          "exposed_population": 330221,
+          "population_normalized": 0.179
+        }
+      },
+      "meta": {
+        "source": "worldpop",
+        "year": 2020
+      }
+    },
+    "Garissa,Isiolo,Mandera,Marsabit,Samburu,Turkana,Wajir": {
+      "counties": {
+        "Turkana": {
+          "exposed_population": 1065432,
+          "population_normalized": 0.457
+        },
+        "Marsabit": {
+          "exposed_population": 312793,
+          "population_normalized": 0.134
+        },
+        "Mandera": {
+          "exposed_population": 2333765,
+          "population_normalized": 1.0
+        },
+        "Wajir": {
+          "exposed_population": 1532852,
+          "population_normalized": 0.657
+        },
+        "Garissa": {
+          "exposed_population": 1346632,
+          "population_normalized": 0.577
+        },
+        "Isiolo": {
+          "exposed_population": 163394,
+          "population_normalized": 0.07
+        },
+        "Samburu": {
+          "exposed_population": 281314,
+          "population_normalized": 0.121
+        }
+      },
+      "meta": {
+        "source": "worldpop",
+        "year": 2020
+      }
+    }
+  }
+}

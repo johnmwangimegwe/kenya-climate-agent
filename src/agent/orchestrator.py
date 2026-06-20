@@ -111,7 +111,7 @@ def build_default_registry(config: dict[str, Any] | None = None) -> dict[str, To
     Each wrapper adapts the underlying tool function to the uniform
     ``fn(parameters: dict) -> dict`` contract.
     """
-    from ..tools import earth_engine, knowledge, population, risk_score
+    from ..tools import cache, knowledge, risk_score
 
     def _knowledge_tool(params: dict[str, Any]) -> dict[str, Any]:
         query = params.get("query", "")
@@ -119,7 +119,8 @@ def build_default_registry(config: dict[str, Any] | None = None) -> dict[str, To
         return knowledge.search_knowledge(query=query, top_k=top_k)
 
     def _earth_engine_tool(params: dict[str, Any]) -> dict[str, Any]:
-        return earth_engine.get_county_risk_layers(
+        # Uses the disk cache (data/cache.json) when available, else live EE.
+        return cache.cached_earth_engine_layers(
             counties=params.get("counties"),
             start_date=params.get("start_date"),
             end_date=params.get("end_date"),
@@ -127,15 +128,23 @@ def build_default_registry(config: dict[str, Any] | None = None) -> dict[str, To
         )
 
     def _population_tool(params: dict[str, Any]) -> dict[str, Any]:
-        return population.get_population_exposure(
+        # Uses the disk cache when available, else live WorldPop.
+        return cache.cached_population_exposure(
             counties=params.get("counties"),
             config=config,
         )
 
     def _risk_tool(params: dict[str, Any]) -> dict[str, Any]:
+        # Feed the risk scorer the CACHED layers + population so it does not
+        # re-query Earth Engine — this is the main speed win for the demo.
+        counties = params.get("counties")
+        layers = cache.cached_earth_engine_layers(counties=counties, config=config)
+        pop = cache.cached_population_exposure(counties=counties, config=config)
         return risk_score.compute_risk_score(
-            counties=params.get("counties"),
+            counties=counties,
             config=config,
+            layers=layers,
+            population_data=pop,
         )
 
     return {
