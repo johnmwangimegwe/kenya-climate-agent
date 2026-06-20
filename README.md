@@ -80,7 +80,7 @@ kenya-climate-agent/
 Requires **Python 3.11+**.
 
 ```bash
-git clone <your-repo-url> kenya-climate-agent
+git clone https://github.com/johnmwangimegwe/kenya-climate-agent.git
 cd kenya-climate-agent
 pip install -r requirements.txt
 # On Colab / Debian / Ubuntu you may need:
